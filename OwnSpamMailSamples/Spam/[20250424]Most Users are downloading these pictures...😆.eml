@@ -1,0 +1,2019 @@
+Delivered-To: nggavin888@gmail.com
+Received: by 2002:a05:7010:df8c:b0:44d:1b0a:5bc1 with SMTP id ok12csp3634177mdb;
+        Wed, 23 Apr 2025 18:56:22 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHG4tIGx8AFFo0bWJJrI8FDmSvZHwtXPjfRfGaWqxpyjcZBDYpIoLkGIQqBIjF6QXqjVvRp
+X-Received: by 2002:a05:620a:bc2:b0:7c5:5339:48cf with SMTP id af79cd13be357-7c956ede191mr158368585a.30.1745459782217;
+        Wed, 23 Apr 2025 18:56:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1745459782; cv=none;
+        d=google.com; s=arc-20240605;
+        b=TDt2Cj4kRLyJOlIpcb3aQTtVkNmUB3Dd31K9/i6zMZhsjBK91LVuyaUerh/uZQtVqR
+         +vcxNPNqyMsivXBMDMAEDJZYjVU9YkbDIA86sQlp7Uj6BJKe8HTywu9uc6iUok7VPbo6
+         E1M7BJVlXOCsMkoKtVZ1uGllZJ3Mkz7jc71jhm3OyreWTcI2KawiVFdj+TLFAQx5Ky5f
+         Veus5+fAj4TptkoLX66pb7A2GR1OL+VL7WJoOYq6qnPZ+YzKNMjjuA5X2jvaW+Mpwwah
+         zz1jWqW6leQ7rsDCiv4aKAAMyQIPpQ+49UdnWt0crA6xIYuFBWxKbYfmK+lDP8hITy6p
+         yEGw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:date:message-id:mime-version:subject:to:from
+         :dkim-signature:dkim-signature;
+        bh=zaPC8UCRYFXNNSRvHeNkrwFI8l3SBCVPIOZfHJuuYh0=;
+        fh=Gij65SMGYGE9VPx015grcShOsXJ6OFBi2FMSFN8J+7A=;
+        b=MlJK51kz3qJ90e6ngkmlNsNzCOj2KKHe4A/RE3uHpFPl0vcFmgaPnmIM46SRALgheM
+         1OGSnCSKwMXjLRtWMEBvCIcgWrSu8dE+H969+pRcY3jDEpCbFT7HavyqT5LefTO1Zpzc
+         uKXS5jV+opo7xyPsz8+v0jq1oGcpD4nyImukSpP04Js3sHRposholayo61kt98CEfVQd
+         7JSsrU6BULgF5O8rFj4YiW7HK9xFyo3bDRjtTY3P9k3EdzDsOUyJIsOvQku+I2NCbqBe
+         pCkG3EKqyhG0x8j7VWT2+RGhW6G+ryO+2EmAPbgazaSs0qqjrpkcHem3onQjHy2YDn6E
+         CMWA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@email.pngtree.com header.s=67w4dtavfawru4mujyvtas3tk2ujw5or header.b=Kfuc3mc+;
+       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=nSDbEezw;
+       spf=pass (google.com: domain of 010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000@amazonses.com designates 54.240.9.67 as permitted sender) smtp.mailfrom=010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000@amazonses.com
+Return-Path: <010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000@amazonses.com>
+Received: from a9-67.smtp-out.amazonses.com (a9-67.smtp-out.amazonses.com. [54.240.9.67])
+        by mx.google.com with ESMTPS id af79cd13be357-7c958c9ed93si32430285a.118.2025.04.23.18.56.22
+        for <nggavin888@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 23 Apr 2025 18:56:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000@amazonses.com designates 54.240.9.67 as permitted sender) client-ip=54.240.9.67;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@email.pngtree.com header.s=67w4dtavfawru4mujyvtas3tk2ujw5or header.b=Kfuc3mc+;
+       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=nSDbEezw;
+       spf=pass (google.com: domain of 010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000@amazonses.com designates 54.240.9.67 as permitted sender) smtp.mailfrom=010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000@amazonses.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=67w4dtavfawru4mujyvtas3tk2ujw5or; d=email.pngtree.com;
+	t=1745459782;
+	h=From:To:Subject:MIME-Version:Content-Type:Message-ID:Date;
+	bh=SVPe6Hl8ezlY7G+w5nVtRpo1ws8hvem98ph//OkDzEc=;
+	b=Kfuc3mc+0R5HCBL3127bx3LovwYqa4Osu4dJNg/w/qMCRra0i3cUEh7Eal41+dDp
+	pYPc/SO7hUKLdkitFWsod68jpTQ3KplAxYyboEsdv/30FceMMoFnT2cVrNe1TAKSRqb
+	S3dfDmw3QKQFFo6Az9vBZyO1xkmeKsH6Ms7ZSDC1908QoKdRnmwmcYxMF3kVfo78bUY
+	OT9IjKHe2Bl3qUE4lrZw23V97MM9S+DDAkVckVZUcynF4kAJ99N2wm+140FBu09X8AU
+	xLHG/iZ3fK4PR363KaIgfTlwRSyYscwJK8AkIfCY1ovyoLUjzlCQIbA73TbHNC/CLAT
+	FkUI7gupTA==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1745459782;
+	h=From:To:Subject:MIME-Version:Content-Type:Message-ID:Date:Feedback-ID;
+	bh=SVPe6Hl8ezlY7G+w5nVtRpo1ws8hvem98ph//OkDzEc=;
+	b=nSDbEezwmkW0lWAgm/4hXq/yUgmS0Z66vtQHZ7G3YtoMPbeBS5sFThk26+BFhSpY
+	satoP1VCM3zE9R8vJFCy+TOTLXZxn8XPU2vNrIN1bRxFcXFu72MAUlkY4dwT9KjaPqj
+	iIDxWBhKEcOzXt+7MT5Xd2OGH5BOuAbZR8VdGoaQ=
+From: pngtree@email.pngtree.com
+To: nggavin888@gmail.com
+Subject: =?UTF-8?Q?[20250424]Most_Users_are_dow?=
+ =?UTF-8?Q?nloading_these_pictures...=F0=9F=98=86?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_696483_526103196.1745459781788"
+Message-ID: <010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000@email.amazonses.com>
+Date: Thu, 24 Apr 2025 01:56:21 +0000
+Feedback-ID: ::1.us-east-1.wuZugHOOK8021vBq8rAk+NrC/uiPyCKzeP42mtY988I=:AmazonSES
+X-SES-Outgoing: 2025.04.24-54.240.9.67
+
+------=_Part_696483_526103196.1745459781788
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Pngtree
+------=_Part_696483_526103196.1745459781788
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+    <head>
+        <!-- NAME: 1:3 COLUMN -->
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset=3D"UTF-8">
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">
+        <title>*|MC:SUBJECT|*</title>
+       =20
+    <style type=3D"text/css">
+=09=09p{
+=09=09=09margin:10px 0;
+=09=09=09padding:0;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09h1,h2,h3,h4,h5,h6{
+=09=09=09display:block;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09img,a img{
+=09=09=09border:0;
+=09=09=09height:auto;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09body,#bodyTable,#bodyCell{
+=09=09=09height:100%;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100%;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09table{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09p,a,li,td,blockquote{
+=09=09=09mso-line-height-rule:exactly;
+=09=09}
+=09=09a[href^=3Dtel],a[href^=3Dsms]{
+=09=09=09color:inherit;
+=09=09=09cursor:default;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09p,a,li,td,body,table,blockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,=
+.ExternalClass span,.ExternalClass font{
+=09=09=09line-height:100%;
+=09=09}
+=09=09a[x-apple-data-detectors]{
+=09=09=09color:inherit !important;
+=09=09=09text-decoration:none !important;
+=09=09=09font-size:inherit !important;
+=09=09=09font-family:inherit !important;
+=09=09=09font-weight:inherit !important;
+=09=09=09line-height:inherit !important;
+=09=09}
+=09=09#bodyCell{
+=09=09=09padding:10px;
+=09=09}
+=09=09.templateContainer{
+=09=09=09max-width:600px !important;
+=09=09}
+=09=09a.mcnButton{
+=09=09=09display:block;
+=09=09}
+=09=09.mcnImage,.mcnRetinaImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent{
+=09=09=09word-break:break-word;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09.mcnDividerBlock{
+=09=09=09table-layout:fixed !important;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Background Style
+=09@tip Set the background color and top border for your email. You may wan=
+t to choose colors that match your company's branding.
+=09*/
+=09=09body,#bodyTable{
+=09=09=09/*@editable*/background-color:#FAFAFA;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Background Style
+=09@tip Set the background color and top border for your email. You may wan=
+t to choose colors that match your company's branding.
+=09*/
+=09=09#bodyCell{
+=09=09=09/*@editable*/border-top:0;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Email Border
+=09@tip Set the border for your email.
+=09*/
+=09=09.templateContainer{
+=09=09=09/*@editable*/border:0;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 1
+=09@tip Set the styling for all first-level headings in your emails. These =
+should be the largest of your headings.
+=09@style heading 1
+=09*/
+=09=09h1{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:26px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 2
+=09@tip Set the styling for all second-level headings in your emails.
+=09@style heading 2
+=09*/
+=09=09h2{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:22px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 3
+=09@tip Set the styling for all third-level headings in your emails.
+=09@style heading 3
+=09*/
+=09=09h3{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:20px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 4
+=09@tip Set the styling for all fourth-level headings in your emails. These=
+ should be the smallest of your headings.
+=09@style heading 4
+=09*/
+=09=09h4{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:18px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Style
+=09@tip Set the background color and borders for your email's preheader are=
+a.
+=09*/
+=09=09#templatePreheader{
+=09=09=09/*@editable*/background-color:#FAFAFA;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:9px;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Text
+=09@tip Set the styling for your email's preheader text. Choose a size and =
+color that is easy to read.
+=09*/
+=09=09#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent=
+ p{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:12px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Link
+=09@tip Set the styling for your email's preheader links. Choose a color th=
+at helps them stand out from your text.
+=09*/
+=09=09#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextConte=
+nt p a{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Style
+=09@tip Set the background color and borders for your email's header area.
+=09*/
+=09=09#templateHeader{
+=09=09=09/*@editable*/background-color:#FFFFFF;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:9px;
+=09=09=09/*@editable*/padding-bottom:0;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Text
+=09@tip Set the styling for your email's header text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Link
+=09@tip Set the styling for your email's header links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a=
+{
+=09=09=09/*@editable*/color:#007C89;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Body
+=09@section Body Style
+=09@tip Set the background color and borders for your email's body area.
+=09*/
+=09=09#templateBody{
+=09=09=09/*@editable*/background-color:#FFFFFF;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:0;
+=09=09=09/*@editable*/padding-bottom:0;
+=09=09}
+=09/*
+=09@tab Body
+=09@section Body Text
+=09@tip Set the styling for your email's body text. Choose a size and color=
+ that is easy to read.
+=09*/
+=09=09#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Body
+=09@section Body Link
+=09@tip Set the styling for your email's body links. Choose a color that he=
+lps them stand out from your text.
+=09*/
+=09=09#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+=09=09=09/*@editable*/color:#007C89;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Columns
+=09@section Column Style
+=09@tip Set the background color and borders for your email's columns.
+=09*/
+=09=09#templateColumns{
+=09=09=09/*@editable*/background-color:#FFFFFF;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:2px solid #EAEAEA;
+=09=09=09/*@editable*/padding-top:0;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Columns
+=09@section Column Text
+=09@tip Set the styling for your email's column text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateColumns .columnContainer .mcnTextContent,#templateColumns .c=
+olumnContainer .mcnTextContent p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Columns
+=09@section Column Link
+=09@tip Set the styling for your email's column links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateColumns .columnContainer .mcnTextContent a,#templateColumns =
+.columnContainer .mcnTextContent p a{
+=09=09=09/*@editable*/color:#007C89;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Style
+=09@tip Set the background color and borders for your email's footer area.
+=09*/
+=09=09#templateFooter{
+=09=09=09/*@editable*/background-color:#FAFAFA;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:9px;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Text
+=09@tip Set the styling for your email's footer text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:12px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:center;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Link
+=09@tip Set the styling for your email's footer links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a=
+{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09@media only screen and (min-width:768px){
+=09=09.templateContainer{
+=09=09=09width:600px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body,table,td,p,a,li,blockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09#bodyCell{
+=09=09=09padding-top:10px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.columnWrapper{
+=09=09=09max-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnRetinaImage{
+=09=09=09max-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImage{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnC=
+aptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,=
+.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCapt=
+ionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCapti=
+onRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImag=
+eCardRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnI=
+mageCardRightImageContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupContent{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOu=
+ter .mcnTextContent{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcn=
+CaptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-=
+child .mcnTextContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardBottomImageContent{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockInner{
+=09=09=09padding-top:0 !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockOuter{
+=09=09=09padding-top:9px !important;
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnTextContent,.mcnBoxedTextContentColumn{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcpreview-image-uploader{
+=09=09=09display:none !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 1
+=09@tip Make the first-level headings larger in size for better readability=
+ on small screens.
+=09*/
+=09=09h1{
+=09=09=09/*@editable*/font-size:22px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 2
+=09@tip Make the second-level headings larger in size for better readabilit=
+y on small screens.
+=09*/
+=09=09h2{
+=09=09=09/*@editable*/font-size:20px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 3
+=09@tip Make the third-level headings larger in size for better readability=
+ on small screens.
+=09*/
+=09=09h3{
+=09=09=09/*@editable*/font-size:18px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 4
+=09@tip Make the fourth-level headings larger in size for better readabilit=
+y on small screens.
+=09*/
+=09=09h4{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Boxed Text
+=09@tip Make the boxed text larger in size for better readability on small =
+screens. We recommend a font size of at least 16px.
+=09*/
+=09=09.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentCon=
+tainer .mcnTextContent p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Preheader Visibility
+=09@tip Set the visibility of the email's preheader on small screens. You c=
+an hide it to save space.
+=09*/
+=09=09#templatePreheader{
+=09=09=09/*@editable*/display:block !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Preheader Text
+=09@tip Make the preheader text larger in size for better readability on sm=
+all screens.
+=09*/
+=09=09#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent=
+ p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Header Text
+=09@tip Make the header text larger in size for better readability on small=
+ screens.
+=09*/
+=09=09#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Body Text
+=09@tip Make the body text larger in size for better readability on small s=
+creens. We recommend a font size of at least 16px.
+=09*/
+=09=09#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Column Text
+=09@tip Make the column text larger in size for better readability on small=
+ screens. We recommend a font size of at least 16px.
+=09*/
+=09=09#templateColumns .columnContainer .mcnTextContent,#templateColumns .c=
+olumnContainer .mcnTextContent p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Footer Text
+=09@tip Make the footer content text larger in size for better readability =
+on small screens.
+=09*/
+=09=09#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}</style></head>
+    <body style=3D"height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;"=
+>
+        <!--*|IF:MC_PREVIEW_TEXT|*-->
+        <!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"=
+display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px=
+; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIE=
+W_TEXT|*</span><!--<![endif]-->
+        <!--*|END:IF|*-->
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding=
+: 0;width: 100%;background-color: #FAFAFA;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" sty=
+le=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;height: 100%;margin: 0;padding: 10px;width: 100%;border-=
+top: 0;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                        <tr>
+                        <td align=3D"center" valign=3D"top" width=3D"600" s=
+tyle=3D"width:600px;">
+                        <![endif]-->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"templateContainer" style=3D"border-collapse:=
+ collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;border: 0;max-width: 600px !important;=
+">
+                            <tr>
+                                <td valign=3D"top" id=3D"templatePreheader"=
+ style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;background-color: #FAFAFA;background-image: none;bac=
+kground-repeat: no-repeat;background-position: center;background-size: cove=
+r;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: =
+0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                               =20
+                                   =20
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://js.pngtree.com/web3/images/email/1.png" width=3D"56" style=3D"m=
+ax-width: 1200px;padding-bottom: 0;display: inline !important;vertical-alig=
+n: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-in=
+terpolation-mode: bicubic;" class=3D"mcnImage">
+                                   =20
+                               =20
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" id=3D"templateHeader" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;background-color: #FFFFFF;background-image: none;backgr=
+ound-repeat: no-repeat;background-position: center;background-size: cover;b=
+order-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 0;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcn=
+TextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09   =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                    <tbody><tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetic=
+a;font-size: 16px;line-height: 150%;text-align: left;">
+                       =20
+                            <h1 style=3D"display: block;margin: 0;padding: =
+0;color: #202020;font-family: Helvetica;font-size: 26px;font-style: normal;=
+font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left=
+;">pngtree updates weekly collection</h1>
+
+<p style=3D"margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-fami=
+ly: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">We have =
+prepared a new collection of popular download designs for pngtree this week=
+, for you who love design, don't miss it!</p>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+               =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" id=3D"templateBody" styl=
+e=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;background-color: #FFFFFF;background-image: none;backgrou=
+nd-repeat: no-repeat;background-position: center;background-size: cover;bor=
+der-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnButt=
+onBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspac=
+e: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"mcnButtonContentContainer" style=3D"border-collapse: separate !import=
+ant;border-radius: 3px;background-color: #89D085;mso-table-lspace: 0pt;mso-=
+table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 16px;padding: 18p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"GO NOW!" h=
+ref=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%=
+2Ftopic%3Fsce=3Dma%26id=3Dwk%26d=3D200608/1/010001966582a09c-a3407567-2ef0-=
+4d08-88ad-4a7c088f83a5-000000/ZpGkjYsoOGpx1Dpprbuga6IpWt4=3D423" target=3D"=
+_blank" style=3D"font-weight: bold;letter-spacing: normal;line-height: 100%=
+;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;displ=
+ay: block;">GO NOW!</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" id=3D"templateColumns" s=
+tyle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;background-color: #FFFFFF;background-image: none;backg=
+round-repeat: no-repeat;background-position: center;background-size: cover;=
+border-top: 0;border-bottom: 2px solid #EAEAEA;padding-top: 0;padding-botto=
+m: 9px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"200" style=3D"width:200px;">
+                                    <![endif]-->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"200" class=3D"columnWrapper" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"col=
+umnContainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: =
+100%;-webkit-text-size-adjust: 100%;"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" class=3D"mcnCaptionBlock" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=
+=3D"top" style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+       =20
+           =20
+
+            <img alt=3D"" src=3D"https://png.pngtree.com/topic/outside/2025=
+0218/43b6cfb5c1e3439c777a837b92ffd19c.png" width=3D"164" style=3D"max-width=
+: 288px;border: 0;height: auto;outline: none;text-decoration: none;-ms-inte=
+rpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+           =20
+       =20
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0 9px=
+ 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helv=
+etica;font-size: 16px;line-height: 150%;text-align: left;" height=3D"50" wi=
+dth=3D"164">
+            <span style=3D"font-size:16px"><strong>Flowers</strong></span>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnButtonContentContainer" style=3D"border-collapse: s=
+eparate !important;border-radius: 3px;background-color: #89D085;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 14px;padding: 10p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"VIEW" href=
+=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%2Ft=
+opic%2Fspring_21488%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/010001966582a09c-=
+a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/lyF4AF6Nuet7Vrn9x9z_hLRESw4=3D4=
+23" target=3D"_blank" style=3D"font-weight: bold;letter-spacing: normal;lin=
+e-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-=
+line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;display: block;">VIEW</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=
+=3D"top" style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+       =20
+           =20
+
+            <img alt=3D"" src=3D"https://png.pngtree.com/topic/outside/2025=
+0218/367b804117422c55a642eb26fdf77f5a.png" width=3D"164" style=3D"max-width=
+: 288px;border: 0;height: auto;outline: none;text-decoration: none;-ms-inte=
+rpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+           =20
+       =20
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0 9px=
+ 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helv=
+etica;font-size: 16px;line-height: 150%;text-align: left;" height=3D"50" wi=
+dth=3D"164">
+            <span style=3D"font-size:16px"><strong>Colorful Spring Backgrou=
+nd</strong></span>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnButtonContentContainer" style=3D"border-collapse: s=
+eparate !important;border-radius: 3px;background-color: #89D085;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 14px;padding: 10p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"VIEW" href=
+=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%2Ft=
+opic%2Fspring_21487%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/010001966582a09c-=
+a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/P5En-V1Z1kQ_asijKGnqJVoB9H4=3D4=
+23" target=3D"_blank" style=3D"font-weight: bold;letter-spacing: normal;lin=
+e-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-=
+line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;display: block;">VIEW</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"200" style=3D"width:200px;">
+                                    <![endif]-->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"200" class=3D"columnWrapper" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"col=
+umnContainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: =
+100%;-webkit-text-size-adjust: 100%;"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" class=3D"mcnCaptionBlock" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=
+=3D"top" style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+       =20
+           =20
+
+            <img alt=3D"" src=3D"https://png.pngtree.com/topic/outside/2025=
+0312/f0a6f065860717e8f692dd85771eb0c7.png" width=3D"164" style=3D"max-width=
+: 288px;border: 0;height: auto;outline: none;text-decoration: none;-ms-inte=
+rpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+           =20
+       =20
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0 9px=
+ 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helv=
+etica;font-size: 16px;line-height: 150%;text-align: left;" height=3D"50" wi=
+dth=3D"164">
+            <span style=3D"font-size:16px"><strong>Happy Holi Festival In I=
+ndia</strong></span>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnButtonContentContainer" style=3D"border-collapse: s=
+eparate !important;border-radius: 3px;background-color: #89D085;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 14px;padding: 10p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"VIEW" href=
+=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%2Ft=
+opic%2Fholi-happy-holi-india_21516%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/01=
+0001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/jtc3Ey5FobPNnTI8=
+Qve5YZ1goCs=3D423" target=3D"_blank" style=3D"font-weight: bold;letter-spac=
+ing: normal;line-height: 100%;text-align: center;text-decoration: none;colo=
+r: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;display: block;">VIEW</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=
+=3D"top" style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+       =20
+           =20
+
+            <img alt=3D"" src=3D"https://png.pngtree.com/topic/outside/2023=
+0324/3447dfce0c55fe635470d8b18daa4d46.png" width=3D"164" style=3D"max-width=
+: 288px;border: 0;height: auto;outline: none;text-decoration: none;-ms-inte=
+rpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+           =20
+       =20
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0 9px=
+ 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helv=
+etica;font-size: 16px;line-height: 150%;text-align: left;" height=3D"50" wi=
+dth=3D"164">
+            <span style=3D"font-size:16px"><strong>Ai Ramadan Elements</str=
+ong></span>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnButtonContentContainer" style=3D"border-collapse: s=
+eparate !important;border-radius: 3px;background-color: #89D085;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 14px;padding: 10p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"VIEW" href=
+=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%2Ft=
+opic%2Framadan_20364%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/010001966582a09c=
+-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/bnHA2bO2c-c2f2GFWyMsEE24AUc=3D=
+423" target=3D"_blank" style=3D"font-weight: bold;letter-spacing: normal;li=
+ne-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso=
+-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;display: block;">VIEW</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"200" style=3D"width:200px;">
+                                    <![endif]-->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"200" class=3D"columnWrapper" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"col=
+umnContainer" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: =
+100%;-webkit-text-size-adjust: 100%;"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%" class=3D"mcnCaptionBlock" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=
+=3D"top" style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+       =20
+           =20
+
+            <img alt=3D"" src=3D"https://png.pngtree.com/topic/outside/2024=
+0306/b08aae8252c86e11be5ed11177210635.png" width=3D"164" style=3D"max-width=
+: 288px;border: 0;height: auto;outline: none;text-decoration: none;-ms-inte=
+rpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+           =20
+       =20
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0 9px=
+ 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helv=
+etica;font-size: 16px;line-height: 150%;text-align: left;" height=3D"50" wi=
+dth=3D"164">
+            <span style=3D"font-size:16px"><strong>Cherry Blossoms Spring</=
+strong></span>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnButtonContentContainer" style=3D"border-collapse: s=
+eparate !important;border-radius: 3px;background-color: #89D085;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 14px;padding: 10p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"VIEW" href=
+=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%2Ft=
+opic%2Fcherry-blossoms-spring_20906%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/0=
+10001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/7Zrzp9aE1ZQG4sx=
+X4xWgs1YnMho=3D423" target=3D"_blank" style=3D"font-weight: bold;letter-spa=
+cing: normal;line-height: 100%;text-align: center;text-decoration: none;col=
+or: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;display: block;">VIEW</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnCaptionBlock" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnCaptionBlockOuter">
+        <tr>
+            <td class=3D"mcnCaptionBlockInner" valign=3D"top" style=3D"padd=
+ing: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+               =20
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"mcnCaptionBottomContent" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnCaptionBottomImageContent" align=3D"center" valign=
+=3D"top" style=3D"padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+       =20
+           =20
+
+            <img alt=3D"" src=3D"https://png.pngtree.com/topic/outside/2025=
+0218/cad75861aa50dc214d6cd3473a2f2832.png" width=3D"164" style=3D"max-width=
+: 288px;border: 0;height: auto;outline: none;text-decoration: none;-ms-inte=
+rpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnImage">
+           =20
+       =20
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding: 0 9px=
+ 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helv=
+etica;font-size: 16px;line-height: 150%;text-align: left;" height=3D"50" wi=
+dth=3D"164">
+            <span style=3D"font-size:16px"><strong>Fantasy Spring Poster</s=
+trong></span>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnButtonContentContainer" style=3D"border-collapse: s=
+eparate !important;border-radius: 3px;background-color: #89D085;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 14px;padding: 10p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"VIEW" href=
+=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%2Ft=
+opic%2Fspring_21486%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/010001966582a09c-=
+a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/nBrZN1KTnZfO3GzLH2HtNo6Sv4Y=3D4=
+23" target=3D"_blank" style=3D"font-weight: bold;letter-spacing: normal;lin=
+e-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-=
+line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;display: block;">VIEW</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" id=3D"templateFooter" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;background-color: #FAFAFA;background-image: none;backgr=
+ound-repeat: no-repeat;background-position: center;background-size: cover;b=
+order-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m=
+cnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09   =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                    <tbody><tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetic=
+a;font-size: 12px;line-height: 150%;text-align: center;">
+                       =20
+                            <div style=3D"text-align: left;"><span style=3D=
+"color:#000000"><span style=3D"font-size:16px">More this week's updated fre=
+e selection of designs welcome to Pngtree...</span></span></div></td></tr><=
+/tbody></table></td></tr></tbody></table><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageBlock" style=3D"min-w=
+idth: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace=
+: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom: =
+0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                               =20
+                                    <a href=3D"https://dcd7nrbm.r.us-east-1=
+.awstrack.me/L0/https:%2F%2Fpngtree.com%2Ftopic%3Fsce=3Dma%26id=3Dwk%26d=3D=
+20250424/1/010001966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/3Hi=
+jPGWIpd0M0S2nu0z490N72wA=3D423" title=3D"" class=3D"" target=3D"_blank" sty=
+le=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://png.pngtree.com/email-week/back/2025/02/20/e5e07dfc2cf98fef5b92=
+c3e2b239bd3d.png?sce=3Dma&amp;id=3Dwk&amp;d=3D20250424" width=3D"564" style=
+=3D"max-width: 864px;padding-bottom: 0;display: inline !important;vertical-=
+align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-m=
+s-interpolation-mode: bicubic;" class=3D"mcnImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom:=
+ 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"center" cla=
+ss=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"mcnButtonContentContainer" style=3D"border-collapse: separate !import=
+ant;border-radius: 3px;background-color: #89D085;mso-table-lspace: 0pt;mso-=
+table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial;font-size: 16px;padding: 18p=
+x;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"GO NOW!" h=
+ref=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2Fpngtree.com%=
+2Ftopic%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/2/010001966582a09c-a3407567-2ef=
+0-4d08-88ad-4a7c088f83a5-000000/CmvWZ7WPY-nAAFq1INe_L_7oXdg=3D423" target=
+=3D"_blank" style=3D"font-weight: bold;letter-spacing: normal;line-height: =
+100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-heigh=
+t-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;d=
+isplay: block;">GO NOW!</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnFollowBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnFollowBlockOuter">
+        <tr>
+            <td align=3D"center" valign=3D"top" style=3D"padding: 9px;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;" class=3D"mcnFollowBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnFollowContentContainer" style=3D"min-width: 100%;bo=
+rder-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody><tr>
+        <td align=3D"center" style=3D"padding-left: 9px;padding-right: 9px;=
+mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;">
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspa=
+ce: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;" class=3D"mcnFollowContent">
+                <tbody><tr>
+                    <td align=3D"center" valign=3D"top" style=3D"padding-to=
+p: 9px;padding-right: 9px;padding-left: 9px;mso-line-height-rule: exactly;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace: =
+0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+                            <tbody><tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                                    <!--[if mso]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                    <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+
+
+                                            <table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inline;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <tbody><tr>
+                                                    <td valign=3D"top" styl=
+e=3D"padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class=3D"mcnFol=
+lowContentItemContainer">
+                                                        <table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnFollowConte=
+ntItem" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-=
+rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                            <tbody><tr>
+                                                                <td align=
+=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 10px;p=
+adding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <table =
+align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" =
+style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: =
+0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                        <tb=
+ody><tr>
+
+                                                                           =
+     <td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollow=
+IconContent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+                                                                           =
+         <a href=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2=
+Fpngtree.com%2Ftopic%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/3/010001966582a09c=
+-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/B4gibNUqr0g7o4y6pafzeqzM9oc=3D=
+423" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src=3D"https://cdn-imag=
+es.mailchimp.com/icons/social-block-v2/color-link-48.png" alt=3D"Website" s=
+tyle=3D"display: block;border: 0;height: auto;outline: none;text-decoration=
+: none;-ms-interpolation-mode: bicubic;" height=3D"24" width=3D"24" class=
+=3D""></a>
+                                                                           =
+     </td>
+
+
+                                                                        </t=
+r>
+                                                                    </tbody=
+></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+
+
+                                            <table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inline;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <tbody><tr>
+                                                    <td valign=3D"top" styl=
+e=3D"padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class=3D"mcnFol=
+lowContentItemContainer">
+                                                        <table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnFollowConte=
+ntItem" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-=
+rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                            <tbody><tr>
+                                                                <td align=
+=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 10px;p=
+adding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <table =
+align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" =
+style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: =
+0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                        <tb=
+ody><tr>
+
+                                                                           =
+     <td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollow=
+IconContent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+                                                                           =
+         <a href=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2=
+Fwww.pinterest.com%2Fpngtree%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/01000196=
+6582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/f0XDqguZPXdeDFbEp6hb9a=
+-mET8=3D423" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-t=
+ext-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src=3D"https://=
+cdn-images.mailchimp.com/icons/social-block-v2/color-pinterest-48.png" alt=
+=3D"Pinterest" style=3D"display: block;border: 0;height: auto;outline: none=
+;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"24" widt=
+h=3D"24" class=3D""></a>
+                                                                           =
+     </td>
+
+
+                                                                        </t=
+r>
+                                                                    </tbody=
+></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+
+
+                                            <table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inline;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <tbody><tr>
+                                                    <td valign=3D"top" styl=
+e=3D"padding-right: 10px;padding-bottom: 9px;mso-line-height-rule: exactly;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class=3D"mcnFol=
+lowContentItemContainer">
+                                                        <table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnFollowConte=
+ntItem" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-=
+rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                            <tbody><tr>
+                                                                <td align=
+=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 10px;p=
+adding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <table =
+align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" =
+style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: =
+0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                        <tb=
+ody><tr>
+
+                                                                           =
+     <td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollow=
+IconContent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+                                                                           =
+         <a href=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2=
+Fwww.facebook.com%2Fpngtree%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/010001966=
+582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/Z6WF8AthAtGY8TEba7GJEvH=
+0V9A=3D423" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src=3D"https://c=
+dn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt=3D=
+"Facebook" style=3D"display: block;border: 0;height: auto;outline: none;tex=
+t-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"24" width=3D=
+"24" class=3D""></a>
+                                                                           =
+     </td>
+
+
+                                                                        </t=
+r>
+                                                                    </tbody=
+></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top"=
+>
+                                        <![endif]-->
+
+
+                                            <table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display: inline;border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <tbody><tr>
+                                                    <td valign=3D"top" styl=
+e=3D"padding-right: 0;padding-bottom: 9px;mso-line-height-rule: exactly;-ms=
+-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class=3D"mcnFollow=
+ContentItemContainer">
+                                                        <table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnFollowConte=
+ntItem" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-=
+rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                            <tbody><tr>
+                                                                <td align=
+=3D"left" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 10px;p=
+adding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <table =
+align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" =
+style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: =
+0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                        <tb=
+ody><tr>
+
+                                                                           =
+     <td align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnFollow=
+IconContent" style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+                                                                           =
+         <a href=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/L0/https:%2F%2=
+Ftwitter.com%2Fpngtree%3Fsce=3Dma%26id=3Dwk%26d=3D20250424/1/010001966582a0=
+9c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/qNTVPOxZlmmXerVS8i2nclhldOE=
+=3D423" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;"><img src=3D"https://cdn-i=
+mages.mailchimp.com/icons/social-block-v2/color-twitter-48.png" alt=3D"Twit=
+ter" style=3D"display: block;border: 0;height: auto;outline: none;text-deco=
+ration: none;-ms-interpolation-mode: bicubic;" height=3D"24" width=3D"24" c=
+lass=3D""></a>
+                                                                           =
+     </td>
+
+
+                                                                        </t=
+r>
+                                                                    </tbody=
+></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                    <!--[if mso]>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pad=
+ding: 10px 18px 25px;mso-line-height-rule: exactly;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top=
+: 2px solid #EEEEEE;border-collapse: collapse;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collap=
+se;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: colla=
+pse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18=
+px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;word-break: break-word;color: #656565;font-family: Helvetic=
+a;font-size: 12px;line-height: 150%;text-align: center;">
+
+                            <em>Copyright =C2=A9 *|2025|* *|pngtree|*, All =
+rights reserved.<br>
+<br>
+Our mailing address is:<br>
+*info@pngtree.com*&nbsp;</em><br>
+<br>
+Want to change how you receive these emails?<br>
+You can&nbsp;<a href=3D"http://dcd7nrbm.r.us-east-1.awstrack.me/L0/http:%2F=
+%2Fpngtree.com%2Femail-unsubscribe/1/010001966582a09c-a3407567-2ef0-4d08-88=
+ad-4a7c088f83a5-000000/In2S8krfNDIILC100hNpqIa6nhI=3D423" style=3D"mso-line=
+-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: =
+100%;color: #656565;font-weight: normal;text-decoration: underline;">unsubs=
+cribe from this list</a>.<br>
+&nbsp;
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+               =20
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img alt=3D"" src=3D"https://dcd7nrbm.r.us-east-1.awstrack.me/I0/010001=
+966582a09c-a3407567-2ef0-4d08-88ad-4a7c088f83a5-000000/Nmg1hBu2Y7XOOGPKyjsl=
+UJUlxYA=3D423" style=3D"display: none; width: 1px; height: 1px;">
+</body>
+</html>
+
+------=_Part_696483_526103196.1745459781788--

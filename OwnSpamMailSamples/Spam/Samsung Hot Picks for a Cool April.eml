@@ -1,0 +1,1315 @@
+Received: from SEYPR04MB6577.apcprd04.prod.outlook.com (2603:1096:101:ba::13)
+ by SEZPR04MB8285.apcprd04.prod.outlook.com with HTTPS; Tue, 15 Apr 2025
+ 05:20:50 +0000
+Received: from SG2PR06CA0204.apcprd06.prod.outlook.com (2603:1096:4:1::36) by
+ SEYPR04MB6577.apcprd04.prod.outlook.com (2603:1096:101:ba::13) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8632.36; Tue, 15 Apr 2025 05:20:44 +0000
+Received: from HK3PEPF0000021F.apcprd03.prod.outlook.com
+ (2603:1096:4:1:cafe::85) by SG2PR06CA0204.outlook.office365.com
+ (2603:1096:4:1::36) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8632.36 via Frontend Transport; Tue,
+ 15 Apr 2025 05:20:44 +0000
+Authentication-Results: spf=pass (sender IP is 198.2.185.183)
+ smtp.mailfrom=mail183.suw121.mcdlv.net; dkim=pass (signature was verified)
+ header.d=samsung.com;dmarc=pass action=none
+ header.from=samsung.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of mail183.suw121.mcdlv.net
+ designates 198.2.185.183 as permitted sender)
+ receiver=protection.outlook.com; client-ip=198.2.185.183;
+ helo=mail183.suw121.mcdlv.net; pr=C
+Received: from mail183.suw121.mcdlv.net (198.2.185.183) by
+ HK3PEPF0000021F.mail.protection.outlook.com (10.167.8.41) with Microsoft SMTP
+ Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8655.12 via
+ Frontend Transport; Tue, 15 Apr 2025 05:20:43 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=samsung.com; s=k3;
+	t=1744694430; x=1744964430; i=my_shop@samsung.com;
+	bh=LbyU2seO14BpgOZKyUJMHTSV6B1W4Lr2PDlz/KOHTZo=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=nTZNLMY5sF1xaFvOGZ4PyaiwLVxLMtQVzSxMWy7tCp5YA/nKEL7KSTVsAz7kcXfX/
+	 8b0cgyBoOohecxzpv8p8ZPvCHv8TUSiZ/Yd19/UKR7lrvTz0eYIrFnVvNcqEA5/nKE
+	 BKd2aqAkBZvyQjuktd/aFz1LO5jbCw1wdvXzWQ5TjPijeMFtMIpqkQlqT6CMyk+PPi
+	 b0YIVy17/Cw/y5c/AgM4j6mHu5fA9Ej/Xs48M36z52lAvUyVZ9WfBgdJbAI+3j6S4W
+	 y0hOfYrJdqOBpEffukRWiXE/bdAWw8h1myRx95if5jaB/RcizLIxDL1/SmBG18RPNW
+	 97bmHlN2XNjpw==
+Received: from localhost (localhost [127.0.0.1])
+	by mail183.suw121.mcdlv.net (Mailchimp) with ESMTP id 4ZcCCy4WXMzS6hNBw
+	for <102767763@students.swinburne.edu.my>; Tue, 15 Apr 2025 05:20:30 +0000 (GMT)
+Subject: =?utf-8?Q?Samsung=20Hot=20Picks=20for=20a=20Cool=20April?=
+From: Samsung Student Offer MY <my_shop@samsung.com>
+Reply-To: =?utf-8?Q?Samsung=20Student=20Offer=20MY?= <my_shop@samsung.com>
+To: <102767763@students.swinburne.edu.my>
+Date: Tue, 15 Apr 2025 05:20:17 +0000
+Message-ID: <d125e2b68b2510ce42fa5eb01.a15e7e3e39.20250415052007.3e5f1627d2.dfc009c2@mail183.suw121.mcdlv.net>
+X-Mailer: Mailchimp Mailer - **CID3e5f1627d2a15e7e3e39**
+X-Campaign: mailchimpd125e2b68b2510ce42fa5eb01.3e5f1627d2
+X-campaignid: mailchimpd125e2b68b2510ce42fa5eb01.3e5f1627d2
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=d125e2b68b2510ce42fa5eb01&id=3e5f1627d2&e=a15e7e3e39
+X-MC-User: d125e2b68b2510ce42fa5eb01
+Feedback-ID: 132778522:132778522.14131400:us19:mc
+List-ID: d125e2b68b2510ce42fa5eb01mc list <d125e2b68b2510ce42fa5eb01.642938.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://samsung.us19.list-manage.com/unsubscribe?u=d125e2b68b2510ce42fa5eb01&id=44795f9bf3&t=h&e=a15e7e3e39&c=3e5f1627d2>, <mailto:unsubscribe-mc.us19_d125e2b68b2510ce42fa5eb01.3e5f1627d2-a15e7e3e39@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_2112605820"
+Return-Path: bounce-mc.us19_132778522.14131400-a15e7e3e39@mail183.suw121.mcdlv.net
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Apr 2025 05:20:44.1514
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 9b5fd685-2188-4624-b9f0-08dd7bdd458f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 3f639a9b-27c8-4403-82b1-ebfb88052d15:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: HK3PEPF0000021F:EE_|SEYPR04MB6577:EE_|SEZPR04MB8285:EE_
+X-MS-Exchange-Organization-AuthSource: HK3PEPF0000021F.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 9b5fd685-2188-4624-b9f0-08dd7bdd458f
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:13230040|4022899009|69100299015|12012899012|31052699007|39142699007|5073199012|3072899012|2092899012|8096899003|13003099007|4076899003;
+X-Forefront-Antispam-Report: CIP:198.2.185.183;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail183.suw121.mcdlv.net;PTR:mail183.suw121.mcdlv.net;CAT:NONE;SFTY:9.25;SFS:(13230040)(4022899009)(69100299015)(12012899012)(31052699007)(39142699007)(5073199012)(3072899012)(2092899012)(8096899003)(13003099007)(4076899003);DIR:INB;SFTY:9.25;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Apr 2025 05:20:43.7139
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 9b5fd685-2188-4624-b9f0-08dd7bdd458f
+X-MS-Exchange-CrossTenant-Id: 3f639a9b-27c8-4403-82b1-ebfb88052d15
+X-MS-Exchange-CrossTenant-AuthSource: HK3PEPF0000021F.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SEYPR04MB6577
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.8156298
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8632.030
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4713078)(4714097)(4999068)(920097)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?cmZ0VmtpWUdDd1BJV3kyMnJKMndTQTVraFc3RncvRThETndpS3ZPOUlsOEJS?=
+ =?utf-8?B?bmwyaUQzV3dwWDdCTUxtYlJ6SWU4WEtKOXdZUFdVd255RTRZdWhzcXFXcCtX?=
+ =?utf-8?B?TEtOWTk4RmVIc3pJdUw2bjgza0ZOMzBNZEUwQjFxR1FXYnFJbjZveUNIWGEr?=
+ =?utf-8?B?SEVOYnpKYkorRzdOa0FVRk1Ia2JvajVTNkFZMlRjQkhob3dyUlFYazVIeFF2?=
+ =?utf-8?B?WDRxa1JqcVZiS2hKZnhoNzkyYWROVlRCdC9xbWswL2w3SmNIeE9RTUYzWml1?=
+ =?utf-8?B?dkJmTFc3dDg3SldyVmhXL0lsQWFTWURpSHR6OFp2cHFyUnk0V1NIR3RuaG5y?=
+ =?utf-8?B?SFdRSWhvSmc1WnRXRFlMSVBYN0pVbmNQMGgxbkFhdDRZSGhwRGFLMUplZ1hP?=
+ =?utf-8?B?TzJKYkF6K0gwRGc3ZlZnR2hnVG9IRy9Hc3BqZDdBUExIRHBrY0NBaGw0OFlw?=
+ =?utf-8?B?Y3lPY0xMNk9VdCtEN2lERkIrbFhyblh2VmF1ZzZqZkZ3MTVjZnNUTnBBTFdX?=
+ =?utf-8?B?RmZISHAwQnRqT281T3V6MzhzNkNDK2ZSN3A4VUVxQ1RSZ1A1dkp1cmNoMTFK?=
+ =?utf-8?B?N3ovSk5halV4eVJZaDVaSlJUdmRyZFpzOHV1dWYzR2Y0Qnp4MFAza3RMQkJT?=
+ =?utf-8?B?bXd3SFhSdk5IVldySlNPU1k4M1cwNENVT3Nac3dXbC9hZnJpdFdxVXltY3hu?=
+ =?utf-8?B?RjFwaDcxbnZzQ3l2MGJaL1haMWd5ellMcWgrVXRKUklYalUxdjB1Q2VneUg1?=
+ =?utf-8?B?VEdFeHdUdnpNV21RNmZuUXYxR0FTamw4dGM4bnFpbGFFMVBDbWFaOFdIREg1?=
+ =?utf-8?B?T3JkUm9EekREY00rMHl4TU43b1ozYjJpYUsxSzhmUnA4VUlld0FXdExqdkUz?=
+ =?utf-8?B?ZFhyeCtsd0lnTkJyUFVpQllPOXFXblMwZjFuR2dQeTA0RUxlMTJuRjNmM0h4?=
+ =?utf-8?B?VVVWbU4yamxpSkp0c0VVYmRHVEJxNVIzK2E1QU51ZnBVYlRSUTlyYW5oc1Iy?=
+ =?utf-8?B?dVhJT2N2emFPcmJtWmFtb3JxUXF4UXh6bENmeTZac0NIVFZTR2hRQVlHRjRR?=
+ =?utf-8?B?N212WDdjWTZzcXlUeEhlSWFDbzR2Q1lXdWc0NlpzQnFyNGZoaG4yam05dUFV?=
+ =?utf-8?B?SGxIZk5UQmxOQlFOSnBJSlI2UVJnQjR6d0RTRjJhU0dSeUJWMjhySHdZdTdE?=
+ =?utf-8?B?aUs4U0pCb05xUkRSYXFCeEd6bENpWVpkOVlZMFU2cVdjYVBXeFJjcGVla2Yx?=
+ =?utf-8?B?VDlxL1Rpa0pmSHhEdEtDZitJTzJQeGI4dXRtUUVUS2YzNTQ0UXdScnhCcXI4?=
+ =?utf-8?B?SHVGQ3hvdlJteDFEcHJ4NVV4MEtlMzYyZlZoK0h0NEc4aVRBdWxrSjJyTDRh?=
+ =?utf-8?B?Zk5CeS8rZFE2ZzhMZGEzM3hHak9rTXhtTWFqYmp2c2VwTjBhUmhiU21sUUhO?=
+ =?utf-8?B?YnlxakVRWnMzQ3VVcEt5dlZSU3BvZmRydWx3b0tmZ05sRFh2K0xENFJCajlm?=
+ =?utf-8?B?SHQ5eFMrTGtOZGh5bEdlVmNLUHBwRkh4bkxKYWw5WHlaUlBGcW9XbHplRWJ4?=
+ =?utf-8?B?eHZKb2VGdWNwa29Cb2NSVVgxamEveGQraldtVXN5Z1BEVHpaU0M0UmVWdDk2?=
+ =?utf-8?B?OENuQitFVVlRRUVtWjRuaVRxK0N6QXIvSnMrenZsNUliV3VrTTNjZ3NwUDda?=
+ =?utf-8?B?Rk1jalZhWGpKRjlERTZhRjdqRGFycjVCMXEwa0J2NnFaK2lUVjRZd0pGTVZv?=
+ =?utf-8?B?L0NPOTVWUDg5NzBNRThSbmxQOVlta1hJSFRJdEJTVHpqSXp5WXZPai9POC96?=
+ =?utf-8?B?VGo5aGZqWXd2Z0FlYmJ4NGF4YkhUcHRIYXhYNkhtSGRmV3ZGVU01UTBDaU43?=
+ =?utf-8?B?K2lYMk11Mnd6U1UxSStiUjRsd0VYeFlKeGpKT2NmcGt1THhFQmZ0bVNmRWVG?=
+ =?utf-8?B?QzRYRUZDck9jVU40TS9WVFhxWlc5Q1ZMU3ZmZnc3ZUdwY3g1T0VvWCsrL3JE?=
+ =?utf-8?B?eDErTDJxcEhZY1lRSGdjMzluYTU1REw2aFFZYlF5T1lnOVRaMDlWbDZVUDVJ?=
+ =?utf-8?B?SUNQQS9HQWFtZWYzaC8rNGZhUkpnbjloWXV0dEN1M3VlNEtUTmRZdU05dE4x?=
+ =?utf-8?B?N2w5dTVhS2RVV0JXRmpOU0VHeUE0V1g5MmZlOUVyUENDbE5Tc1liYy9LV2pH?=
+ =?utf-8?B?dllpUjRuMzVhZkNMY3NucHpTcCs1dU9xQXVqbDRhYVZyOGVNWDFYWHRwMlow?=
+ =?utf-8?B?MHM4SEJoM1RuRGhPSGhCZ1pFUXNkUzZRVWNsSXVkTUlKU1g2dlhzSnl0bUVN?=
+ =?utf-8?B?UVpORWoxcFB2Z3B0bmZtdklNWlNpOGlRWnNPbjIwa1lleHM0OXlTV2J1VUJT?=
+ =?utf-8?B?d3daSmxNUlh6elJ5d1BtR1dyWUFSbFlMRWRhM1U2RGJQV2JJNzFJRFJpODUr?=
+ =?utf-8?B?dFNCZmtBSElmSit0N0dlaVNENjQxYXErWXM2WVE1cXJUYlZnV2J6a1FNRHlo?=
+ =?utf-8?B?dlVXVFBLNWxBbnNiUng0QnpQTU1qMTBVbVNhSzBLUUlueW5Va25HMEp2dGZC?=
+ =?utf-8?B?Z1BLZGR4YmRPWGRPUHFLZDFKR2NzQm9QR1FHUlJvYnpHM2FGRzA2VHdjYWhM?=
+ =?utf-8?B?bXlsTEtqZklsZlFkRkFXd3g3YlV1VVpvYm52a2QyUGN0NVpSRkZXMzVVVnpS?=
+ =?utf-8?B?SjMxZitUSHFweEFoWE8xd2ZSU2pEWVd5QkxjV1pNWDNDK1FCc3QxTEFUSktH?=
+ =?utf-8?B?ejJpL2kvTGRYT0JxMVRNZjdQRFV5RmExV3l5T2ZOeS93YW1XMzEyZmNQVjNj?=
+ =?utf-8?B?aXp6M0pQdHZEOUUzRmxrYWpsVzVHN21jbHlKa0tFTVk3K1VsREF6bFppd2xT?=
+ =?utf-8?B?RDdnR1lOdmh6ZGlnWTAzVWYrU01rQzFnNmxyUXQ1c2R1anQ2Tm5kbFZFa09H?=
+ =?utf-8?B?WlVFMndJbFZUQ2U1ZEM3ci9mQ3NSMGtlYWVHdmdMSXR2ZHZOdXA2OXpxZG5t?=
+ =?utf-8?Q?3dT4Q9Uh8XAgbo9TLfa8auJsvD8Arj2OsHX?=
+MIME-Version: 1.0
+
+--_----------=_MCPart_2112605820
+Content-Type: text/plain; charset="utf-8"; format=fixed
+Content-Transfer-Encoding: quoted-printable
+
+You don't often get email from my_shop@samsung.com. Learn why this is impor=
+tant<https://aka.ms/LearnAboutSenderIdentification>
+Don't miss this month's must have -- they're going fast.
+View this email in your browser<https://mailchi.mp/samsung/samsung-hot-pick=
+s-for-a-cool-april-edu-02?e=3Da15e7e3e39>
+[https://mcusercontent.com/d125e2b68b2510ce42fa5eb01/images/c3bf89af-f2e8-0=
+339-8825-131085932b2f.png]
+
+
+
+
+
+
+This email was sent to 102767763@students.swinburne.edu.my<mailto:102767763=
+@students.swinburne.edu.my>
+why did I get this?<https://samsung.us19.list-manage.com/about?u=3Dd125e2b6=
+8b2510ce42fa5eb01&id=3D44795f9bf3&e=3Da15e7e3e39&c=3D3e5f1627d2>    unsubsc=
+ribe from this list<https://samsung.us19.list-manage.com/unsubscribe?u=3Dd1=
+25e2b68b2510ce42fa5eb01&id=3D44795f9bf3&t=3Db&e=3Da15e7e3e39&c=3D3e5f1627d2=
+>    update subscription preferences<https://samsung.us19.list-manage.com/p=
+rofile?u=3Dd125e2b68b2510ce42fa5eb01&id=3D44795f9bf3&e=3Da15e7e3e39&c=3D3e5=
+f1627d2>
+Samsung Malaysia Electronics (SME) SDN. BHD. =C2=B7 Level 15, Mercu 2, No. =
+3, Jalan Bangsar, Kampung Haji Abdullah Hukum =C2=B7 Kuala Lumpur, Kuala Lu=
+mpur 59200 =C2=B7 Malaysia
+
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =
+=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F
+
+
+--_----------=_MCPart_2112605820
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head><!-- NAME: 1 COLUMN - FULL WIDTH --><!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<title>Samsung Hot Picks for a Cool April</title>
+<style type=3D"text/css">
+		p{
+			margin:10px 0;
+			padding:0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		.mcnPreviewText{
+			display:none !important;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		p,a,li,td,blockquote{
+			mso-line-height-rule:exactly;
+		}
+		a[href^=3Dtel],a[href^=3Dsms]{
+			color:inherit;
+			cursor:default;
+			text-decoration:none;
+		}
+		p,a,li,td,body,table,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.Ext=
+ernalClass span,.ExternalClass font{
+			line-height:100%;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		table[align=3Dleft]{
+			float:left;
+		}
+		table[align=3Dright]{
+			float:right;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		a.mcnButton{
+			display:block;
+		}
+		.mcnImage,.mcnRetinaImage{
+			vertical-align:bottom;
+		}
+		.mcnTextContent{
+			word-break:break-word;
+		}
+		.mcnTextContent img{
+			height:auto !important;
+		}
+		.mcnDividerBlock{
+			table-layout:fixed !important;
+		}
+		body,#bodyTable{
+			background-color:#FAFAFA;
+		}
+		#bodyCell{
+			border-top:0;
+		}
+		h1{
+			color:#202020;
+			font-family:Helvetica;
+			font-size:26px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:125%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+		h2{
+			color:#202020;
+			font-family:Helvetica;
+			font-size:22px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:125%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+		h3{
+			color:#202020;
+			font-family:Helvetica;
+			font-size:20px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:125%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+		h4{
+			color:#202020;
+			font-family:Helvetica;
+			font-size:18px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:125%;
+			letter-spacing:normal;
+			text-align:left;
+		}
+		#templatePreheader{
+			background-color:#FAFAFA;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:9px;
+			padding-bottom:9px;
+		}
+		#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+			color:#656565;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:left;
+		}
+		#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextContent p=
+ a{
+			color:#656565;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateHeader{
+			background-color:#FFFFFF;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:9px;
+			padding-bottom:0;
+		}
+		#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+			color:#202020;
+			font-family:Helvetica;
+			font-size:16px;
+			line-height:150%;
+			text-align:left;
+		}
+		#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
+			color:#007C89;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateBody{
+			background-color:#FFFFFF;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:9px;
+			padding-bottom:9px;
+		}
+		#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+			color:#202020;
+			font-family:Helvetica;
+			font-size:16px;
+			line-height:150%;
+			text-align:left;
+		}
+		#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+			color:#007C89;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#templateFooter{
+			background-color:#FAFAFA;
+			background-image:none;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+			border-top:0;
+			border-bottom:0;
+			padding-top:9px;
+			padding-bottom:9px;
+		}
+		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+			color:#656565;
+			font-family:Helvetica;
+			font-size:12px;
+			line-height:150%;
+			text-align:center;
+		}
+		#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
+			color:#656565;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+	@media only screen and (min-width:768px){
+		.templateContainer{
+			width:600px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnRetinaImage{
+			max-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImage{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCapti=
+onBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcn=
+ImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionR=
+ightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRi=
+ghtImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCar=
+dRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImage=
+CardRightImageContentContainer{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer{
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupContent{
+			padding:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter =
+.mcnTextContent{
+			padding-top:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCapt=
+ionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-chil=
+d .mcnTextContent{
+			padding-top:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardBottomImageContent{
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockInner{
+			padding-top:0 !important;
+			padding-bottom:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockOuter{
+			padding-top:9px !important;
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnTextContent,.mcnBoxedTextContentColumn{
+			padding-right:18px !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+			padding-right:18px !important;
+			padding-bottom:0 !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcpreview-image-uploader{
+			display:none !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h1{
+			font-size:22px !important;
+			line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h2{
+			font-size:20px !important;
+			line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h3{
+			font-size:18px !important;
+			line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		h4{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContain=
+er .mcnTextContent p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templatePreheader{
+			display:block !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+			font-size:16px !important;
+			line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+			font-size:14px !important;
+			line-height:150% !important;
+		}
+
+}</style>
+</head>
+<body style=3D"height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D" aspect-ratio: revert !important; background: revert !important; block=
+-size: revert !important; border: revert !important; bottom: revert !import=
+ant; color: revert !important; color-scheme: revert !important; content-vis=
+ibility: revert !important; cursor: revert !important; direction: revert !i=
+mportant; display: revert !important; font-size: revert !important; height:=
+ revert !important; hyphens: revert !important; letter-spacing: revert !imp=
+ortant; line-height: revert !important; margin: revert !important; opacity:=
+ revert !important; order: revert !important; outline: revert !important; o=
+verflow: revert !important; padding: revert !important; position: revert !i=
+mportant; resize: revert !important; rotate: revert !important; scale: reve=
+rt !important; tab-size: revert !important; table-layout: revert !important=
+; text-align: revert !important; text-indent: revert !important; text-orien=
+tation: revert !important; text-overflow: revert !important; text-shadow: r=
+evert !important; text-transform: revert !important; text-wrap: revert !imp=
+ortant; top: revert !important; transition: revert !important; user-select:=
+ revert !important; vertical-align: revert !important; visibility: revert !=
+important; white-space: revert !important; width: revert !important; word-b=
+reak: revert !important; word-spacing: revert !important; writing-mode: rev=
+ert !important; zoom: revert !important; cellpadding: 0 !important; border:=
+ 0 !important; cellspacing: 0 !important; display: table !important; width:=
+ 100% !important; table-layout: fixed !important; border-collapse: seperate=
+ !important; float: none !important; border-spacing: 0px 0px !important; " =
+align=3D"left">
+<tbody style=3D" aspect-ratio: revert !important; background: revert !impor=
+tant; block-size: revert !important; border: revert !important; bottom: rev=
+ert !important; color: revert !important; color-scheme: revert !important; =
+content-visibility: revert !important; cursor: revert !important; direction=
+: revert !important; display: revert !important; font-size: revert !importa=
+nt; height: revert !important; hyphens: revert !important; letter-spacing: =
+revert !important; line-height: revert !important; margin: revert !importan=
+t; opacity: revert !important; order: revert !important; outline: revert !i=
+mportant; overflow: revert !important; padding: revert !important; position=
+: revert !important; resize: revert !important; rotate: revert !important; =
+scale: revert !important; tab-size: revert !important; table-layout: revert=
+ !important; text-align: revert !important; text-indent: revert !important;=
+ text-orientation: revert !important; text-overflow: revert !important; tex=
+t-shadow: revert !important; text-transform: revert !important; text-wrap: =
+revert !important; top: revert !important; transition: revert !important; u=
+ser-select: revert !important; vertical-align: revert !important; visibilit=
+y: revert !important; white-space: revert !important; width: revert !import=
+ant; word-break: revert !important; word-spacing: revert !important; writin=
+g-mode: revert !important; zoom: revert !important; display: block !importa=
+nt; ">
+<tr style=3D" aspect-ratio: revert !important; background: revert !importan=
+t; block-size: revert !important; border: revert !important; bottom: revert=
+ !important; color: revert !important; color-scheme: revert !important; con=
+tent-visibility: revert !important; cursor: revert !important; direction: r=
+evert !important; display: revert !important; font-size: revert !important;=
+ height: revert !important; hyphens: revert !important; letter-spacing: rev=
+ert !important; line-height: revert !important; margin: revert !important; =
+opacity: revert !important; order: revert !important; outline: revert !impo=
+rtant; overflow: revert !important; padding: revert !important; position: r=
+evert !important; resize: revert !important; rotate: revert !important; sca=
+le: revert !important; tab-size: revert !important; table-layout: revert !i=
+mportant; text-align: revert !important; text-indent: revert !important; te=
+xt-orientation: revert !important; text-overflow: revert !important; text-s=
+hadow: revert !important; text-transform: revert !important; text-wrap: rev=
+ert !important; top: revert !important; transition: revert !important; user=
+-select: revert !important; vertical-align: revert !important; visibility: =
+revert !important; white-space: revert !important; width: revert !important=
+; word-break: revert !important; word-spacing: revert !important; writing-m=
+ode: revert !important; zoom: revert !important; ">
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D" aspect-ratio: revert !important; background: revert =
+!important; block-size: revert !important; border: revert !important; botto=
+m: revert !important; color: revert !important; color-scheme: revert !impor=
+tant; content-visibility: revert !important; cursor: revert !important; dir=
+ection: revert !important; display: revert !important; font-size: revert !i=
+mportant; height: revert !important; hyphens: revert !important; letter-spa=
+cing: revert !important; line-height: revert !important; margin: revert !im=
+portant; opacity: revert !important; order: revert !important; outline: rev=
+ert !important; overflow: revert !important; padding: revert !important; po=
+sition: revert !important; resize: revert !important; rotate: revert !impor=
+tant; scale: revert !important; tab-size: revert !important; table-layout: =
+revert !important; text-align: revert !important; text-indent: revert !impo=
+rtant; text-orientation: revert !important; text-overflow: revert !importan=
+t; text-shadow: revert !important; text-transform: revert !important; text-=
+wrap: revert !important; top: revert !important; transition: revert !import=
+ant; user-select: revert !important; vertical-align: revert !important; vis=
+ibility: revert !important; white-space: revert !important; width: revert !=
+important; word-break: revert !important; word-spacing: revert !important; =
+writing-mode: revert !important; zoom: revert !important; padding: 7px 2px =
+7px 2px !important; background-color: #A6A6A6 !important; valign: middle !i=
+mportant; width: 0px !important; ">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D" aspect-ratio: revert !important;=
+ background: revert !important; block-size: revert !important; border: reve=
+rt !important; bottom: revert !important; color: revert !important; color-s=
+cheme: revert !important; content-visibility: revert !important; cursor: re=
+vert !important; direction: revert !important; display: revert !important; =
+font-size: revert !important; height: revert !important; hyphens: revert !i=
+mportant; letter-spacing: revert !important; line-height: revert !important=
+; margin: revert !important; opacity: revert !important; order: revert !imp=
+ortant; outline: revert !important; overflow: revert !important; padding: r=
+evert !important; position: revert !important; resize: revert !important; r=
+otate: revert !important; scale: revert !important; tab-size: revert !impor=
+tant; table-layout: revert !important; text-align: revert !important; text-=
+indent: revert !important; text-orientation: revert !important; text-overfl=
+ow: revert !important; text-shadow: revert !important; text-transform: reve=
+rt !important; text-wrap: revert !important; top: revert !important; transi=
+tion: revert !important; user-select: revert !important; vertical-align: re=
+vert !important; visibility: revert !important; white-space: revert !import=
+ant; width: revert !important; word-break: revert !important; word-spacing:=
+ revert !important; writing-mode: revert !important; zoom: revert !importan=
+t; width: 100% !important; background-color: #EAEAEA !important; padding: 7=
+px 5px 7px 15px !important; font-family: wf_segoe-ui_normal, Segoe UI, Sego=
+e WP, Tahoma, Arial, sans-serif !important; font-size: 12px !important; fon=
+t-weight: normal !important; color: #212121 !important; text-align: left !i=
+mportant; word-wrap: break-word !important; ">
+<div style=3D" aspect-ratio: revert !important; background: revert !importa=
+nt; block-size: revert !important; border: revert !important; bottom: rever=
+t !important; color: revert !important; color-scheme: revert !important; co=
+ntent-visibility: revert !important; cursor: revert !important; direction: =
+revert !important; display: revert !important; font-size: revert !important=
+; height: revert !important; hyphens: revert !important; letter-spacing: re=
+vert !important; line-height: revert !important; margin: revert !important;=
+ opacity: revert !important; order: revert !important; outline: revert !imp=
+ortant; overflow: revert !important; padding: revert !important; position: =
+revert !important; resize: revert !important; rotate: revert !important; sc=
+ale: revert !important; tab-size: revert !important; table-layout: revert !=
+important; text-align: revert !important; text-indent: revert !important; t=
+ext-orientation: revert !important; text-overflow: revert !important; text-=
+shadow: revert !important; text-transform: revert !important; text-wrap: re=
+vert !important; top: revert !important; transition: revert !important; use=
+r-select: revert !important; vertical-align: revert !important; visibility:=
+ revert !important; white-space: revert !important; width: revert !importan=
+t; word-break: revert !important; word-spacing: revert !important; writing-=
+mode: revert !important; zoom: revert !important; ">
+You don't often get email from my_shop@samsung.com. <a href=3D"https://aka.=
+ms/LearnAboutSenderIdentification" style=3D"background: revert !important;c=
+olor: revert !important;content-visibility: revert !important;direction: re=
+vert !important;display: revert !important;font-size: revert !important;opa=
+city: revert !important;rotate: revert !important;scale: revert !important;=
+visibility: revert !important;">
+Learn why this is important</a> </div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D" aspect-ratio: reve=
+rt !important; background: revert !important; block-size: revert !important=
+; border: revert !important; bottom: revert !important; color: revert !impo=
+rtant; color-scheme: revert !important; content-visibility: revert !importa=
+nt; cursor: revert !important; direction: revert !important; display: rever=
+t !important; font-size: revert !important; height: revert !important; hyph=
+ens: revert !important; letter-spacing: revert !important; line-height: rev=
+ert !important; margin: revert !important; opacity: revert !important; orde=
+r: revert !important; outline: revert !important; overflow: revert !importa=
+nt; padding: revert !important; position: revert !important; resize: revert=
+ !important; rotate: revert !important; scale: revert !important; tab-size:=
+ revert !important; table-layout: revert !important; text-align: revert !im=
+portant; text-indent: revert !important; text-orientation: revert !importan=
+t; text-overflow: revert !important; text-shadow: revert !important; text-t=
+ransform: revert !important; text-wrap: revert !important; top: revert !imp=
+ortant; transition: revert !important; user-select: revert !important; vert=
+ical-align: revert !important; visibility: revert !important; white-space: =
+revert !important; width: revert !important; word-break: revert !important;=
+ word-spacing: revert !important; writing-mode: revert !important; zoom: re=
+vert !important; width: 75px !important; background-color: #EAEAEA !importa=
+nt; padding: 7px 5px 7px 5px !important; font-family: wf_segoe-ui_normal, S=
+egoe UI, Segoe WP, Tahoma, Arial, sans-serif !important; font-size: 12px !i=
+mportant; font-weight: normal !important; color: #212121 !important; text-a=
+lign: left !important; word-wrap: break-word !important; align: left !impor=
+tant; ">
+</td>
+</tr>
+</tbody>
+</table>
+<div><!--
+--><!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displ=
+ay:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">Don't miss this =
+month's must have -- they're
+ going fast.</span><!--<![endif]--><!--
+-->
+<center>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" he=
+ight=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 1=
+00%;background-color: #FAFAFA;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"bodyCell" style=3D"mso-line-heigh=
+t-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;h=
+eight: 100%;margin: 0;padding: 0;width: 100%;border-top: 0;">
+<!-- BEGIN TEMPLATE // -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"templatePreheader" style=3D"backg=
+round:#FAFAFA none no-repeat center/cover;mso-line-height-rule: exactly;-ms=
+-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #F=
+AFAFA;background-image: none;background-repeat: no-repeat;background-positi=
+on: center;background-size: cover;border-top: 0;border-bottom: 0;padding-to=
+p: 9px;padding-bottom: 9px;">
+<!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;max-width: 600px !important;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"preheaderContainer" style=3D"mso-line-height-ru=
+le: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding-top: 9px;ms=
+o-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]--><!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;float: left;" width=3D"100%" class=3D"mcnTextContentContaine=
+r">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"mcnTextContent" style=3D"padding: 0px 18px 9px;=
+text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;font-=
+family: Helvetica;font-size: 12px;line-height: 150%;">
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fmailchi.mp%2Fsamsung%2Fsamsung-hot-picks-for-a-cool-april-edu-02%3Fe%3D=
+a15e7e3e39&amp;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5=
+fd68521884624b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C=
+638802912507765013%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIw=
+LjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&a=
+mp;sdata=3D0MSiPDtpmwcFImtmWE2OwI6aDO5iwEfMunLm%2FePNzx0%3D&amp;reserved=3D=
+0" originalsrc=3D"https://mailchi.mp/samsung/samsung-hot-picks-for-a-cool-a=
+pril-edu-02?e=3Da15e7e3e39" target=3D"_blank" style=3D"mso-line-height-rule=
+: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: =
+#656565;font-weight: normal;text-decoration: underline;">View
+ this email in your browser</a> </td>
+</tr>
+</tbody>
+</table>
+<!--[if mso]>
+				</td>
+				<![endif]--><!--[if mso]>
+				</tr>
+				</table>
+				<![endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"templateHeader" style=3D"backgrou=
+nd:#FFFFFF none no-repeat center/cover;mso-line-height-rule: exactly;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFF=
+FF;background-image: none;background-repeat: no-repeat;background-position:=
+ center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: =
+9px;padding-bottom: 0;">
+<!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;max-width: 600px !important;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"headerContainer" style=3D"mso-line-height-rule:=
+ exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+<tbody class=3D"mcnTextBlockOuter">
+<tr>
+<td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-line-height-rul=
+e: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<img src=3D"https://mcusercontent.com/d125e2b68b2510ce42fa5eb01/images/c3bf=
+89af-f2e8-0339-8825-131085932b2f.png" usemap=3D"#image-map" style=3D"border=
+: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode=
+: bicubic;">
+<map name=3D"image-map"><area target=3D"" alt=3D"Buy now" title=3D"Buy now"=
+ href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fsamsung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5e=
+b01%26id%3D70b01cb6ea%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%40stu=
+dents.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c8440=
+382b1ebfb88052d15%7C0%7C0%7C638802912507786282%7CUnknown%7CTWFpbGZsb3d8eyJF=
+bXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIld=
+UIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DkS%2FfHX0gvFT73kFWsXlm%2BSkYhDLM0WqI=
+91z386CtMm4%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.us19.list-m=
+anage.com/track/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3D70b01cb6ea&amp=
+;e=3Da15e7e3e39" coords=3D"340,361,518,423" shape=3D"rect"><area target=3D"=
+" alt=3D"Buy now" title=3D"Buy now" href=3D"https://apc01.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.com%2Ftrack%2=
+Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3D3fc76ddb69%26e%3Da15e7e3e39&a=
+mp;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5fd6852188462=
+4b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638802912507=
+797185%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIs=
+IlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DW=
+d1Zz5cmiQ%2Bh%2F8p%2FiPO7wzRgoj6IuoIDSryTJeerG3Y%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://samsung.us19.list-manage.com/track/click?u=3Dd125e2b68b25=
+10ce42fa5eb01&amp;id=3D3fc76ddb69&amp;e=3Da15e7e3e39" coords=3D"71,1311,249=
+,1373" shape=3D"rect"><area target=3D"" alt=3D"Buy now" title=3D"Buy now" h=
+ref=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2F=
+samsung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb0=
+1%26id%3D518b3b147c%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%40stude=
+nts.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c844038=
+2b1ebfb88052d15%7C0%7C0%7C638802912507807773%7CUnknown%7CTWFpbGZsb3d8eyJFbX=
+B0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUI=
+joyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D9GsvaZ71600bL%2FkDnO%2FSHdNfx%2BHxiS6N=
+FqsxdKlQNNc%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.us19.list-m=
+anage.com/track/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3D518b3b147c&amp=
+;e=3Da15e7e3e39" coords=3D"339,1310,519,1374" shape=3D"rect"><area target=
+=3D"" alt=3D"Pre-order now" title=3D"Pre-order now" href=3D"https://apc01.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-mana=
+ge.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3D2826d42349%26=
+e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7=
+C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C=
+0%7C638802912507820186%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYi=
+OiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%=
+7C&amp;sdata=3D5unTme2Lf0YngTmhCS1KEb0pL9qWZ3WyauSr%2B8dPUK0%3D&amp;reserve=
+d=3D0" originalsrc=3D"https://samsung.us19.list-manage.com/track/click?u=3D=
+d125e2b68b2510ce42fa5eb01&amp;id=3D2826d42349&amp;e=3Da15e7e3e39" coords=3D=
+"589,1310,785,1375" shape=3D"rect"><area target=3D"" alt=3D"Buy now" title=
+=3D"Buy now" href=3D"https://apc01.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Fsamsung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b=
+2510ce42fa5eb01%26id%3Dd5f02601b7%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102=
+767763%40students.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f6=
+39a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638802912507830383%7CUnknown%7CTWFp=
+bGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjo=
+iTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DO5vDL8%2FwIls3DXpQiMZWf1=
+7AGZ6gmawuei9Qmm5jrKQ%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.u=
+s19.list-manage.com/track/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3Dd5f0=
+2601b7&amp;e=3Da15e7e3e39" coords=3D"71,1786,249,1848" shape=3D"rect"><area=
+ target=3D"" alt=3D"Buy now" title=3D"Buy now" href=3D"https://apc01.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.co=
+m%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3D1fbf48cfad%26e%3Da=
+15e7e3e39&amp;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5f=
+d68521884624b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C6=
+38802912507841041%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwL=
+jAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&am=
+p;sdata=3D7Z2Z9SavWFRTtEVfOc63wfYmtFMSCokRMY9i2bpL4ek%3D&amp;reserved=3D0" =
+originalsrc=3D"https://samsung.us19.list-manage.com/track/click?u=3Dd125e2b=
+68b2510ce42fa5eb01&amp;id=3D1fbf48cfad&amp;e=3Da15e7e3e39" coords=3D"332,17=
+86,510,1848" shape=3D"rect"><area target=3D"" alt=3D"Buy now" title=3D"Buy =
+now" href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Fsamsung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42=
+fa5eb01%26id%3D3c993e89b6%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%4=
+0students.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c=
+8440382b1ebfb88052d15%7C0%7C0%7C638802912507850896%7CUnknown%7CTWFpbGZsb3d8=
+eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCI=
+sIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DFzpSMEptvdr4HSdvAgch8wGZe11Tv2mp=
+oW4IviB3Qas%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.us19.list-m=
+anage.com/track/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3D3c993e89b6&amp=
+;e=3Da15e7e3e39" coords=3D"598,1786,776,1848" shape=3D"rect"><area target=
+=3D"" alt=3D"Buy now" title=3D"Buy now" href=3D"https://apc01.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.com%2Ftra=
+ck%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3De2999d4684%26e%3Da15e7e3e=
+39&amp;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5fd685218=
+84624b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C63880291=
+2507861030%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAw=
+MCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=
+=3DleZ5qzGRHLsnFvQclTWxcH6FiuPgvfH8XYvByQyNK8E%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://samsung.us19.list-manage.com/track/click?u=3Dd125e2b68b2510=
+ce42fa5eb01&amp;id=3De2999d4684&amp;e=3Da15e7e3e39" coords=3D"74,2258,252,2=
+321" shape=3D"rect"><area target=3D"" alt=3D"Buy now" title=3D"Buy now" hre=
+f=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsa=
+msung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%=
+26id%3Dca205a5fa6%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%40student=
+s.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c8440382b=
+1ebfb88052d15%7C0%7C0%7C638802912507871062%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0=
+eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjo=
+yfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DYA0gLYuXKsBi3H4pz8cQzMBXDxzu%2FVYVdcMSMk=
+e1b%2B0%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.us19.list-manag=
+e.com/track/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3Dca205a5fa6&amp;e=
+=3Da15e7e3e39" coords=3D"332,2258,510,2321" shape=3D"rect"><area target=3D"=
+" alt=3D"Buy now" title=3D"Buy now" href=3D"https://apc01.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.com%2Ftrack%2=
+Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3D8db7a590f5%26e%3Da15e7e3e39&a=
+mp;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5fd6852188462=
+4b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638802912507=
+880864%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIs=
+IlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3De=
+%2BJIHjopIXSpHSM%2BGAp4n9eYPkQA1VQ%2BYLbKpvkw3zc%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://samsung.us19.list-manage.com/track/click?u=3Dd125e2b68b25=
+10ce42fa5eb01&amp;id=3D8db7a590f5&amp;e=3Da15e7e3e39" coords=3D"599,2258,77=
+8,2321" shape=3D"rect"><area target=3D"" alt=3D"Buy now" title=3D"Buy now" =
+href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2=
+Fsamsung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb=
+01%26id%3Ddb28ccc2b9%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%40stud=
+ents.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c84403=
+82b1ebfb88052d15%7C0%7C0%7C638802912507890614%7CUnknown%7CTWFpbGZsb3d8eyJFb=
+XB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldU=
+IjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D1cADYhUZe0w%2Bn1YwTHiLpW0h43qGPPuAMWJ=
+paw4eRv4%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.us19.list-mana=
+ge.com/track/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3Ddb28ccc2b9&amp;e=
+=3Da15e7e3e39" coords=3D"74,2792,253,2855" shape=3D"rect"><area target=3D""=
+ alt=3D"Buy now" title=3D"Buy now" href=3D"https://apc01.safelinks.protecti=
+on.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.com%2Ftrack%2F=
+click%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3D721122b244%26e%3Da15e7e3e39&am=
+p;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5fd68521884624=
+b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C6388029125078=
+99830%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsI=
+lAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D04=
+4Pe%2FMYvOgRVb3qiSCYUMDMaN3DwuPR5T8NCYqibS0%3D&amp;reserved=3D0" originalsr=
+c=3D"https://samsung.us19.list-manage.com/track/click?u=3Dd125e2b68b2510ce4=
+2fa5eb01&amp;id=3D721122b244&amp;e=3Da15e7e3e39" coords=3D"332,2792,510,285=
+5" shape=3D"rect"><area target=3D"" alt=3D"Buy now" title=3D"Buy now" href=
+=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsam=
+sung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%2=
+6id%3D7834cc78ce%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%40students=
+.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c8440382b1=
+ebfb88052d15%7C0%7C0%7C638802912507909391%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0e=
+U1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoy=
+fQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DSkoVwj5oSlmPsYBbKa4h6T7cnnj2MVJLm0NbQW7sQ=
+%2Fg%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.us19.list-manage.c=
+om/track/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3D7834cc78ce&amp;e=3Da1=
+5e7e3e39" coords=3D"599,2793,778,2855" shape=3D"rect"><area target=3D"" alt=
+=3D"Buy now" title=3D"Buy now" href=3D"https://apc01.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.com%2Ftrack%2Fclic=
+k%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3Dd8aa9e7ac1%26e%3Da15e7e3e39&amp;da=
+ta=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5fd68521884624b9f0=
+08dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C63880291250791912=
+4%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiO=
+iJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3Dtds8jm=
+%2BeQBu4MHOXqRjShe2sqSCp5BBKUgVtlVbUbxk%3D&amp;reserved=3D0" originalsrc=3D=
+"https://samsung.us19.list-manage.com/track/click?u=3Dd125e2b68b2510ce42fa5=
+eb01&amp;id=3Dd8aa9e7ac1&amp;e=3Da15e7e3e39" coords=3D"39,3225,217,3288" sh=
+ape=3D"rect"><area target=3D"" alt=3D"Buy now" title=3D"Buy now" href=3D"ht=
+tps://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.u=
+s19.list-manage.com%2Ftrack%2Fclick%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3D=
+8905f7a4a4%26e%3Da15e7e3e39&amp;data=3D05%7C02%7C102767763%40students.swinb=
+urne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88=
+052d15%7C0%7C0%7C638802912507928507%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGk=
+iOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%=
+3D%7C0%7C%7C%7C&amp;sdata=3DhfyzgcH%2F72qas1i04ZJPwX9CUdym2cFL1MnWduL4p00%3=
+D&amp;reserved=3D0" originalsrc=3D"https://samsung.us19.list-manage.com/tra=
+ck/click?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3D8905f7a4a4&amp;e=3Da15e7e3e=
+39" coords=3D"328,3225,506,3288" shape=3D"rect"><area target=3D"" alt=3D"Bu=
+y now" title=3D"Buy now" href=3D"https://apc01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.com%2Ftrack%2Fclick%3Fu%=
+3Dd125e2b68b2510ce42fa5eb01%26id%3Dc60e7bfc55%26e%3Da15e7e3e39&amp;data=3D0=
+5%7C02%7C102767763%40students.swinburne.edu.my%7C9b5fd68521884624b9f008dd7b=
+dd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638802912507937838%7CUn=
+known%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4=
+zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D56MrWvBJJ5ku=
+77kRYl%2Fygi2eQVIc0BKYopEy6weIrl4%3D&amp;reserved=3D0" originalsrc=3D"https=
+://samsung.us19.list-manage.com/track/click?u=3Dd125e2b68b2510ce42fa5eb01&a=
+mp;id=3Dc60e7bfc55&amp;e=3Da15e7e3e39" coords=3D"614,3225,793,3288" shape=
+=3D"rect"></map></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"templateBody" style=3D"background=
+:#FFFFFF none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF=
+;background-image: none;background-repeat: no-repeat;background-position: c=
+enter;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9p=
+x;padding-bottom: 9px;">
+<!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;max-width: 600px !important;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"bodyContainer" style=3D"mso-line-height-rule: e=
+xactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" id=3D"templateFooter" style=3D"backgrou=
+nd:#FAFAFA none no-repeat center/cover;mso-line-height-rule: exactly;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFA=
+FA;background-image: none;background-repeat: no-repeat;background-position:=
+ center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: =
+9px;padding-bottom: 9px;">
+<!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"templateContainer" style=3D"border-collapse: collapse=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;max-width: 600px !important;">
+<tbody>
+<tr>
+<td valign=3D"top" class=3D"footerContainer" style=3D"mso-line-height-rule:=
+ exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;padding: 10px 1=
+8px 25px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top: 2px solid #EEE=
+EEE;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+<span></span></td>
+</tr>
+</tbody>
+</table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;table-layout: fixed !important;">
+<tbody class=3D"mcnDividerBlockOuter">
+<tr>
+<td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;padding: 10px 1=
+8px 25px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+<table class=3D"mcnDividerContent" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top: 2px solid #EEE=
+EEE;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<tbody>
+<tr>
+<td style=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+<span></span></td>
+</tr>
+</tbody>
+</table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+</tr>
+</tbody>
+</table>
+<!-- // END TEMPLATE --></td>
+</tr>
+</tbody>
+</table>
+</center>
+<center><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=
+=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; border-top:1px so=
+lid #E5E5E5;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top:20px; padding-bott=
+om:20px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"canspamBar">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"color:#606060; font-family:Hel=
+vetica, Arial, sans-serif; font-size:11px; line-height:150%; padding-right:=
+20px; padding-bottom:5px; padding-left:20px; text-align:center;">
+This email was sent to <a href=3D"mailto:102767763@students.swinburne.edu.m=
+y" target=3D"_blank" style=3D"color:#404040 !important;">
+102767763@students.swinburne.edu.my</a> <br>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fsamsung.us19.list-manage.com%2Fabout%3Fu%3Dd125e2b68b2510ce42fa5eb01%26=
+id%3D44795f9bf3%26e%3Da15e7e3e39%26c%3D3e5f1627d2&amp;data=3D05%7C02%7C1027=
+67763%40students.swinburne.edu.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f63=
+9a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638802912507947041%7CUnknown%7CTWFpb=
+GZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoi=
+TWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3Ddn4WG3K9n%2Bz3k3HUECbLFAP=
+P73agHId7%2BeACiCWCjm8%3D&amp;reserved=3D0" originalsrc=3D"https://samsung.=
+us19.list-manage.com/about?u=3Dd125e2b68b2510ce42fa5eb01&amp;id=3D44795f9bf=
+3&amp;e=3Da15e7e3e39&amp;c=3D3e5f1627d2" target=3D"_blank" style=3D"color:#=
+404040 !important;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp=
+;<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fsamsung.us19.list-manage.com%2Funsubscribe%3Fu%3Dd125e2b68b2510ce42fa5=
+eb01%26id%3D44795f9bf3%26t%3Db%26e%3Da15e7e3e39%26c%3D3e5f1627d2&amp;data=
+=3D05%7C02%7C102767763%40students.swinburne.edu.my%7C9b5fd68521884624b9f008=
+dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638802912507956802%=
+7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJ=
+XaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DYo9zK9v0=
+wJKiuDYmt0fGV%2BgH%2FfNpzFZMjYuiPLvaBPs%3D&amp;reserved=3D0" originalsrc=3D=
+"https://samsung.us19.list-manage.com/unsubscribe?u=3Dd125e2b68b2510ce42fa5=
+eb01&amp;id=3D44795f9bf3&amp;t=3Db&amp;e=3Da15e7e3e39&amp;c=3D3e5f1627d2" s=
+tyle=3D"color:#404040 !important;">unsubscribe
+ from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"https://apc01.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsamsung.us19.list-manage.com=
+%2Fprofile%3Fu%3Dd125e2b68b2510ce42fa5eb01%26id%3D44795f9bf3%26e%3Da15e7e3e=
+39%26c%3D3e5f1627d2&amp;data=3D05%7C02%7C102767763%40students.swinburne.edu=
+.my%7C9b5fd68521884624b9f008dd7bdd458f%7C3f639a9b27c8440382b1ebfb88052d15%7=
+C0%7C0%7C638802912507967194%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWU=
+sIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7=
+C%7C%7C&amp;sdata=3DiRWBCwkRvbfZUBvUPjjdW3DnOaEwDT2OJRpBwnNujXU%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://samsung.us19.list-manage.com/profile?u=3Dd=
+125e2b68b2510ce42fa5eb01&amp;id=3D44795f9bf3&amp;e=3Da15e7e3e39&amp;c=3D3e5=
+f1627d2" style=3D"color:#404040 !important;">update subscription preference=
+s</a>
+<br>
+Samsung Malaysia Electronics (SME) SDN. BHD. =C2=B7 Level 15, Mercu 2, No. =
+3, Jalan Bangsar, Kampung Haji Abdullah Hukum =C2=B7 Kuala Lumpur, Kuala Lu=
+mpur 59200 =C2=B7 Malaysia
+<br>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; mar=
+gin-top:10px !important;}
+                    }
+                </style></center>
+<div style=3D"display:none;">=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F=E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F=E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=8F =E2=80=87=EF=BB=BF=CD=
+=8F =E2=80=87=EF=BB=BF=CD=8F</div>
+<!--[if !mso]><!-->
+<div style=3D"display:none; font-size:0px; line-height:0px; max-height:0px;=
+ max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all=
+;">
+<img src=3D"https://samsung.us19.list-manage.com/track/open.php?u=3Dd125e2b=
+68b2510ce42fa5eb01&amp;id=3D3e5f1627d2&amp;e=3Da15e7e3e39" height=3D"1" wid=
+th=3D"1" style=3D"display:none; font-size:0px; line-height:0px; opacity:0; =
+overflow:hidden; visibility:hidden; mso-hide:all;" alt=3D""></div>
+<!--<![endif]--></div>
+</body>
+</html>
+
+--_----------=_MCPart_2112605820--

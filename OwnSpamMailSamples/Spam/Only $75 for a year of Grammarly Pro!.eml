@@ -1,0 +1,834 @@
+Received: from SEZPR04MB8213.apcprd04.prod.outlook.com (::1) by
+ SEZPR04MB8285.apcprd04.prod.outlook.com with HTTPS; Wed, 14 May 2025 12:21:14
+ +0000
+Received: from TY4PR01CA0030.jpnprd01.prod.outlook.com (2603:1096:405:2bd::12)
+ by SEZPR04MB8213.apcprd04.prod.outlook.com (2603:1096:101:227::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8722.28; Wed, 14 May
+ 2025 12:21:09 +0000
+Received: from TY2PEPF0000AB88.apcprd03.prod.outlook.com
+ (2603:1096:405:2bd:cafe::2) by TY4PR01CA0030.outlook.office365.com
+ (2603:1096:405:2bd::12) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8746.17 via Frontend Transport; Wed,
+ 14 May 2025 12:21:09 +0000
+Authentication-Results: spf=pass (sender IP is 168.203.32.163)
+ smtp.mailfrom=bounces.grammarly.com; dkim=pass (signature was verified)
+ header.d=mail.grammarly.com;dmarc=pass action=none
+ header.from=mail.grammarly.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounces.grammarly.com
+ designates 168.203.32.163 as permitted sender)
+ receiver=protection.outlook.com; client-ip=168.203.32.163;
+ helo=mta-203-32-163.info.grammarly.com.sparkpostmail.com; pr=E
+Received: from mta-203-32-163.info.grammarly.com.sparkpostmail.com
+ (168.203.32.163) by TY2PEPF0000AB88.mail.protection.outlook.com
+ (10.167.253.11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8722.18 via Frontend
+ Transport; Wed, 14 May 2025 12:21:09 +0000
+Return-Path: msprvs1=20229mELD_tP-=bounces-280172-1538@bounces.grammarly.com
+X-MSFBL: y+MHkoHJ5y/OmxEJpSY1BFIgrypM7GGjAWADUd5c3SQ=|eyJzdWJhY2NvdW50X2l
+	kIjoiMTUzOCIsImN1c3RvbWVyX2lkIjoiMjgwMTcyIiwibWVzc2FnZV9pZCI6IjY
+	4MGJiMzhhMjQ2OGYwNWY2NTkwIiwiciI6IjEwMjc2Nzc2M0BzdHVkZW50cy5zd2l
+	uYnVybmUuZWR1Lm15IiwidGVuYW50X2lkIjoic3BjIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail.grammarly.com;
+	s=20230920; t=1747225267; i=@mail.grammarly.com;
+	bh=GKJ+esrhdU84rFVqGmtiJcibvPpYWIKa6zTJr5aSxCU=;
+	h=To:Message-ID:Date:Content-Type:List-Unsubscribe:
+	 List-Unsubscribe-Post:Subject:From:From:To:Cc:Subject;
+	b=aWiJ9Pxn1PKtVBVPUF0+hUCNNsnognk+K4JqhQh82LDMQ0UfutcGGLQvRbl4DA7Md
+	 c7kSdSPt66sxlCjo+7Q58mBAxLk0f4/Jz50rX7Lzb1H2PnPsCk/gkvTKk1Waa408hI
+	 2nrOWZzPT+5XVyikdlimbGT6aZeqJTaaCniTNReBNN7J+Cg2YeJB9ai5Rhn/Ly4/KC
+	 CfBBmhWK+Wi/T2XKn8vKkDF3iy6o5nGGQIHqnZ00p5EfPwp1jakEakLAokzu74yC33
+	 fkXqzkhAEJqFSwGt4gCGcrkEBPKbYXvEXK+/PZzdkWUauNwd5+M2CvMMNIcvk9dR62
+	 w4DYIM+jbMSbw==
+Received: from [10.90.21.40] ([10.90.21.40])
+	by i-084eae0c069232be8.mta1vrest.sd.prd.sparkpost (ecelerity 4.8.0.74368 r(msys-ecelerity:tags/4.8.0.17)) with REST
+	id 09/5E-19555-3BA84286; Wed, 14 May 2025 12:21:07 +0000
+To: 102767763@students.swinburne.edu.my
+Message-ID: <09.5E.19555.3BA84286@i-084eae0c069232be8.mta1vrest.sd.prd.sparkpost>
+Date: Wed, 14 May 2025 12:21:07 +0000
+Content-Type: multipart/alternative; boundary="_----V4EkyoAbLN1YyeJPm3hY+A===_78/5E-19555-3BA84286"
+X-Campaign-ID: 13470807
+List-Unsubscribe: <https://links.iterable.com/s/u/oryYrP9bFjtACeKnkiKjqSZ47JKoRC2iIgSdCv7VjWk63PYx8fTFql7FEfz408MKeg4vI1AWl2GAhoZlQ9C50d12Ta1tJ29MNSU3ztDIHeLHbutN9e3VH2sCh1rOk-BvRX2-BaQr5xr6fKzad2qYpg6cRxO26gS872joXSDhPM61Tzq0z5g4BwBN-skAyVYRX_yq7c9xW4vsL1qa/Cr_GfmVhz_dLCvhkAHYZYc4GNGRNa1xk/8>,<mailto:unsubscribe+13470807+17616219@unsubscribe.iterable.com>
+X-Message-ID: ec6da9cf5ad24e8b904b524a61e479ed
+X-Feedback-ID: 17616219:13470807:87826:iterable
+Reply-To: noreply@grammarly.com
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Subject: Only $75 for a year of Grammarly Pro!
+From: "Grammarly" <hello@mail.grammarly.com>
+Feedback-ID: 17616219:13470807:87826:iterable
+X-MS-Exchange-Organization-ExpirationStartTime: 14 May 2025 12:21:09.5440
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: eae67224-6108-4550-ede3-08dd92e1cf0b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 3f639a9b-27c8-4403-82b1-ebfb88052d15:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: TY2PEPF0000AB88:EE_|SEZPR04MB8213:EE_|SEZPR04MB8285:EE_
+X-MS-Exchange-Organization-AuthSource: TY2PEPF0000AB88.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: eae67224-6108-4550-ede3-08dd92e1cf0b
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:13230040|13102899012|2092899012|6062899009|39142699007|5082899009|1032899013|3092899012|29132699027|31052699007|3072899012|12012899012|13012899012|5062899012|4022899009|69100299015|4092899012|8096899003|13003099007|2066899003;
+X-Forefront-Antispam-Report: CIP:168.203.32.163;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mta-203-32-163.info.grammarly.com.sparkpostmail.com;PTR:mta-203-32-163.info.grammarly.com.sparkpostmail.com;CAT:NONE;SFS:(13230040)(13102899012)(2092899012)(6062899009)(39142699007)(5082899009)(1032899013)(3092899012)(29132699027)(31052699007)(3072899012)(12012899012)(13012899012)(5062899012)(4022899009)(69100299015)(4092899012)(8096899003)(13003099007)(2066899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 May 2025 12:21:09.0475
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: eae67224-6108-4550-ede3-08dd92e1cf0b
+X-MS-Exchange-CrossTenant-Id: 3f639a9b-27c8-4403-82b1-ebfb88052d15
+X-MS-Exchange-CrossTenant-AuthSource: TY2PEPF0000AB88.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SEZPR04MB8213
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.1656726
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8722.027
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NE00a29ob2pCZ2h2dktjSkxYZWcvOVlpcWVOM2NBQi9JVm9FWndKZDJ3c3Nl?=
+ =?utf-8?B?TURoNjB4d0hHNzZyV2ZjSWdrditvSjdHcjNycXdod01wL0JqTkEwNDRnVWZ5?=
+ =?utf-8?B?Q3Ixb3BWRmxHWnBqek5kRnBxcUFaMEhVT29QODBOMVpzRnM3RlNSTW1td0d2?=
+ =?utf-8?B?dStMb2s5anFsWEoxZHpNTmh2c2VXb1pVMGtqSE9LU3prZ1V2NmxYZGMvcW5r?=
+ =?utf-8?B?Si9PMSt4WFZQL29sVzN4NkxRTXVvd1dtUzVRS3p3Ry9GcHQyN1NaYlo5Zlpq?=
+ =?utf-8?B?ekJDK2orWTdubkJiQ2JhdlZtQWcwS2ZhSHlFSklkcWNzdGY0WS9pNlhmbmxy?=
+ =?utf-8?B?KzNaZTNoREFhZXNQRW05bEdZL3lQa2prVTM1d1hHZk1lMjYvRGZkbE1xcmla?=
+ =?utf-8?B?QXkxdnVhZTRHYllNZkVVNmpucDJBekd5ckVmNHFua2doRW9SNEhCZzdSZllG?=
+ =?utf-8?B?MmVWb3Boa2tsR1ZIZjE4MGdjQW44bjVzczBvNndtc0doRWh4aVRqemMxWE91?=
+ =?utf-8?B?Rmd0dFlJaDVHamxMWnFNazg1cEx5bFBDVUhVR0FSc0J6NHczVGEyMTRuQ0w4?=
+ =?utf-8?B?cU82OVd2WFY0NXo4UlE0NVZMYXo1ZW05M05UWHl6bnVnMDZKYzFOUHdUekhS?=
+ =?utf-8?B?OGw3RmJpZk1qV0k2eHZpbVo1WUtIVUxGeXd4WHpyT0w1UXN3Rys1TTdsNEdM?=
+ =?utf-8?B?cEt1d1ZuYnIwM1N1ekhvRzU5NC9mMkc4bWdDc2FVSjZUanVLMWpWZTdURE9L?=
+ =?utf-8?B?VHpxZjV0U096QUNLUkdSQmYyTGN3QzU5WHJHd1VwWGJMb3hRV0M4azhKdDFB?=
+ =?utf-8?B?UGcrTjhNV29QVnZLbSt1YjNiT1BBaE13b04rRUR2STRJOGJLRUNoNmx4OVo2?=
+ =?utf-8?B?Vm9KT1FNeEhSNEROdklUdXNpTEZBa1FicWh0QXFWVHNIdkxWbWZjTG83aFBD?=
+ =?utf-8?B?bTdEVUt0MTVFNWhKcEpMYUhGUXZOcVdrRXdwQ0NSYnNETUtxUUhCY1V4T28z?=
+ =?utf-8?B?bUVuOWZ2VnR6eCs4WEJyQ0dEU21jRmZIYS9UeWQ0dk1RTnpjTFM3SXhGeC9v?=
+ =?utf-8?B?RjFSdndVOGJUVDJDWGpraUtkbG1jbjVyYzlIU0NVVjNoaFpxZ2d6MHBFbjl2?=
+ =?utf-8?B?VkROSFVuM3dPenVPVWNqajhodGJaUzFYSE0xOGVJUHRhYlhxcVNpUlN3a3Fl?=
+ =?utf-8?B?YzI0aGk5VkpMVVFOMEsxSTB4SjJ6aEN4V081RmpqN2thYkpKcS9lb2ZlazlK?=
+ =?utf-8?B?Mkw0UklzWVdEaEI5S2RrSWJHek1QTG1zTG1uaVBTUWxQWnNIUS9lZHlsWE1u?=
+ =?utf-8?B?emRLYnQ1emZHajFkSVZWbUs1aUlsSTNKVjVZdTN5MEhjVExqaFJNMXNRYzU0?=
+ =?utf-8?B?RlRMaHp0TG9tZjNUYmtxU3RidWorejRXMUJrMHN2dk0rT3hSVFlLakZiakpO?=
+ =?utf-8?B?NFNKZE4rbW1wMGRtS05qUGdGcGcrWXNTTkRyNTFQamR1TktjejkyaDgxSEg4?=
+ =?utf-8?B?NjlCUklUc2xVdVA5cWFQNHFoUm9tWVVmNFhCank3cy9mckdwSXFVNkx2dWNQ?=
+ =?utf-8?B?RGtlR0t0TllWQjFtcHZmOVk1Rjh0elU5VThRaHVTZTVzdGRzdXBPejZjTFh2?=
+ =?utf-8?B?b2syZVlxV2IreVJDbVpUMThIbGJ1WjdLR2RyWWJyWllPc1V4bWJRQy8rMTRJ?=
+ =?utf-8?B?aFhpNzk2VlBYV0RtVXZxTVRYWG9OaXB5WUxXK0VPcTJkRHhtbHNzbU5pbHZB?=
+ =?utf-8?B?WUk5Kzhjc0RlTlAzRnBPVlB5eWpNYnVnZGJDcWxHS3loQTdsc1hyOFlYWkpC?=
+ =?utf-8?B?TGdHZk1hczZnVmY0LzlrOUQrWEFHclg3a20xcFF6NWlHUzhrNGMvdEpuYWVJ?=
+ =?utf-8?B?RmtVNUlmRDZ2UmRlL2phb3J2alZxRXZKL09nS1NzOWJvN0srT3BKSEdDWHJt?=
+ =?utf-8?B?RDFpaU5NQjZIS0ZLa2Q5OGxGTDFlRUd3cE1meVRpTXh4eW0zYVpzVTFMUStT?=
+ =?utf-8?B?YUFpaW1QelB3VHpDMmMxOE0xQTRFVjZXZDB4Q1lNT1poZWdrcU83ZlcvYWZy?=
+ =?utf-8?B?T0Nqei9NRndUZnNuZkluclcxVFhNZHBxY0JoVHB6LzFzRWxtakkyQkVSYzJW?=
+ =?utf-8?B?a0p2WGlnRVNRK2wyZGd5bm5HeWkvS0NhZWMwdDBIaVowUlFWMHRrbGFLdDFN?=
+ =?utf-8?B?SWxCTWFRdlRZZDdVRWdsZEY0VmFxRm05QUViczYvdzRFMjh5aTFOYUpudXps?=
+ =?utf-8?B?OUd0a1hKdDFGcHREb0t6a1V2VSs0U0J3NU5qcVZHYTdLSGQxNUREL0V1ZTdK?=
+ =?utf-8?B?elE0WVhpUzdncFV3UU9VeE96b1ZuZVV6bHlsQ2ZyajRZbkNESE5JOFdRZnVm?=
+ =?utf-8?B?R3J0ZXNocWF1aXQ5bithM3J3bG9VVDNrTmM0TTh6MjhiS2tpZGFvTzNpbUpP?=
+ =?utf-8?B?bE5ESWcraUJjd3dhNVZYVjJPVFNXRUFmMlllYnlRazU3dFBGaVdRRWxYa1BT?=
+ =?utf-8?B?eEEzVCtnRFRuVmpQZTFNQXg2MGZKZzRIajJ1Zk5LUEZ3VEFsM1dZT2szK3VR?=
+ =?utf-8?B?VHo1RjNNMG4yZW01MmZadjI2UCtSeldOUnRTaGZ5eitFcUY3VmV1R21sVDBS?=
+ =?utf-8?B?a1NsN215d0cvQkJSakF0OE5lVkpBWmJNcURhczYxb1V5V1Jtc2VxSHNzQ1c0?=
+ =?utf-8?B?WTZlVFBHaTFaNGx1dDFLOC9kNUx6SU4wUmUrbStMVDcvN3NrQllQVkJLemNN?=
+ =?utf-8?B?dytsU1JtMmdmdm9WUGFOa1dVU2lSSk9EK0JWSGIwYm1ReVVQZzJGalVKMTh3?=
+ =?utf-8?B?PT0=?=
+MIME-Version: 1.0
+
+--_----V4EkyoAbLN1YyeJPm3hY+A===_78/5E-19555-3BA84286
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+Grammarly =F0=9F=95=92 Save time with smart AI writing tools.  =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =0A=E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =0A=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =0A=E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =0A=0A=0A=0A <http://=
+grammarly.com/>  <http://grammarly.com/> Upgrade Now =E2=86=92 =0A<http://g=
+rammarly.com/upgrade/pro> =0A=0A=0A=0A=0A =0A<https://discount.grammarly.co=
+m/api/discounts/live=3Fhash=3Dc600df9e49f513c9a6b9fe0a4b6d6379c8ee358b&disc=
+ount=3DeydhbGlhcyc6ICd4SXJYSVInLCAnY2FtcGFpZ25JZCc6ICcyMDI1MDVfNzVmb3Jhbm51=
+YWxfbGNtX2FsbF9NYXlQcm9tbycsICdjcmVhdGlvbkRhdGUnOiAnMjAyNS0wNS0xNFQwMjoyMTo=
+wNycsICdleHBpcmVEYXRlJzogJzIwMjUtMDYtMDNUMTI6MjE6MDcnLCAnc2lnbmF0dXJlJzogJ2=
+I1ZjBlODY1ZTM0MTJjNjMwMzM0MzQ4YzY1Yjk5MTE2ZmU4YTc3MDcnfQ=3D=3D>=0A=0A=0A=0A=
+=0AWhat Would You Do With =0AMore Time=3F =0A=0A=0A Good communication, esp=
+ecially when powered by AI, can save you serious time =0Aeach week. Grammar=
+ly Pro helps you work faster by turning ideas into polished =0Areports, rep=
+lies, and rewrites in seconds.=0A=0A Access up to 2,000 AI prompts per mont=
+h when you upgrade to Grammarly Pro, =0Anow only $75* for an annual plan. O=
+ffer ends May 21. =0A=0A=0A=0A=0AGet Pro =0A<https://discount.grammarly.com=
+/api/discounts/live=3Fhash=3Dc600df9e49f513c9a6b9fe0a4b6d6379c8ee358b&disco=
+unt=3DeydhbGlhcyc6ICd4SXJYSVInLCAnY2FtcGFpZ25JZCc6ICcyMDI1MDVfNzVmb3Jhbm51Y=
+WxfbGNtX2FsbF9NYXlQcm9tbycsICdjcmVhdGlvbkRhdGUnOiAnMjAyNS0wNS0xNFQwMjoyMTow=
+NycsICdleHBpcmVEYXRlJzogJzIwMjUtMDYtMDNUMTI6MjE6MDcnLCAnc2lnbmF0dXJlJzogJ2I=
+1ZjBlODY1ZTM0MTJjNjMwMzM0MzQ4YzY1Yjk5MTE2ZmU4YTc3MDcnfQ=3D=3D>=0A=0A=0A=0A=
+=0A=0A=0A=0A <http://www.facebook.com/grammarly>  <https://www.instagram.co=
+m/grammarly/>  =0A<http://www.linkedin.com/company/grammarly>  <http://twit=
+ter.com/grammarly> =0A=0A=0AView Web Version =0A<https://click.grammarly.co=
+m/s/vb/USsJC72BbEzKGHgLbtgNFXUJ9oXVoLku9F6XUSRL14WEgf0dyTGS6g0dwhJ4bp1qwLwd=
+ehGd3_w2wzDGzzwYC1UrMUEbvxfMJzs1hi2mufyJeYp5pWJ28o5Tnujft_4dLGQlCnhJfAMzoOp=
+kBU89KFhrqL_P73PF4GNhig/569ESAB-Hk4YTv2uBJdg2eG-vkD5u29I/8>=0A =E2=80=A2Ema=
+il Preferences =0A<https://redirect.grammarly.com/redirect=3Fmail_profile_p=
+references=3D1&profileToken=3DeydlbWFpbCc6ICcxMDI3Njc3NjNAc3R1ZGVudHMuc3dpb=
+mJ1cm5lLmVkdS5teScsICdzaWduYXR1cmUnOiAnZmE4MmUwYjg1YzkxMWNjNjFhZDllZjhlNmU0=
+NjY2NGFlZTNkMDUxNCd9>=0A =E2=80=A2Unsubscribe =0A<https://click.grammarly.c=
+om/s/eh/1q6MlUsAA3TGNfzziPoAoeWJRxUUtVASarXvDZRCiBcDGkhDe2uz3PUdge_5t8zcSAc=
+Q_wncymx9UP9Iu7N1qwkVnenMW1TSwD9nXATdKsYwtodWQDedQaUG0HtW0yRogCixFpKs2Bax25=
+QJFab5F5omsi_hXhNzuM1_yFgOzqYwTPHg4r9CqmusDkMwnuJuPfqlWYzQLfjpZ4GRYm9S4td-I=
+DmrKtAvo0dwsOoLQ076a9SUr46FLpW_OXZn4eQT_zt9bFrMuMRA-fU97IQCKEFNYAo6VnkHAV9Y=
+LiS7JH_jJ6HMTTDz54hBWfpenzR8bQE1wLIfnkNos8U6TA30mBBU4rMCWd1nhHMS4KtdV0_CDaa=
+2Rq1FRkjyntFSswXFckhGXBBy059KgvzGZ8XJCBSrz71NmXl49SWAioLRnyzi8c_tmVNEvHZVDb=
+OZQ9BJHUIU3rZiwczz0rPqNw3mUCAYNPb0mCUHJ_ONBI_a7FjCjri6BRGISl4Atyo-JT4/GcRsF=
+nMyl-3OgFmLcNpQ5PONX6kxVAPS/8>=0A=0A*This offer is applicable to the first =
+seat only, is active until 11:59 PM PST =0Aon May 21, 2025, and cannot be c=
+ombined with other offers or discounts or =0Aapplied to prior purchases. Af=
+ter the promotional period ends, your account =0Awill renew at $144.00 USD =
+for the annual plan. Additional terms apply.=0A=0A You received this offer =
+for Grammarly Pro because you are currently opted in =0Ato receive them via=
+ your preference settings. You may adjust your preferences =0Aat any time b=
+y clicking the link above.=0A=0A=0A=C2=A9 2025 Grammarly, Inc., 548 Market =
+St. #35410, San Francisco, CA 94104
+--_----V4EkyoAbLN1YyeJPm3hY+A===_78/5E-19555-3BA84286
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html lang=3D"en" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head><!--[=
+if gte mso 9]><xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerIn=
+ch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1"> <=
+meta name=3D"format-detection" content=3D"telephone=3Dno"> <meta name=3D"fo=
+rmat-detection" content=3D"date=3Dno"> <meta name=3D"format-detection" cont=
+ent=3D"address=3Dno"> <meta name=3D"format-detection" content=3D"email=3Dno=
+"> <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> <meta name=
+=3D"x-apple-disable-message-reformatting"> <meta name=3D"robots" content=3D=
+"noindex"> <meta name=3D"color-scheme" content=3D"light dark"> <meta name=
+=3D"supported-color-schemes" content=3D"light dark"> <title>Grammarly</titl=
+e> <style type=3D"text/css">u+#body a{color:inherit;text-decoration:none;fo=
+nt-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit=
+}</style> <style type=3D"text/css">ReadMsgBody{width:100%}.ExternalClass{wi=
+dth:100%}.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass=
+ font,.ExternalClass td,.ExternalClass div{line-height:100%}body{-webkit-te=
+xt-size-adjust:100%;-ms-text-size-adjust:100%;margin:0 auto!important}html{=
+-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased}a{outline:=
+0}img{display:block;outline:0}a img{border:0}td{mso-line-height-rule:exactl=
+y}table td{border-collapse:collapse}@-ms-viewport{width:device-width}a[x-ap=
+ple-data-detectors]{color:inherit!important;text-decoration:none!important;=
+font-size:inherit!important;font-family:inherit!important;font-weight:inher=
+it!important;line-height:inherit!important}</style> <style type=3D"text/css=
+">td,p,a,span,strong{font-family:Helvetica,Arial,sans-serif;font-weight:400=
+;color:#1c1c1c}a{color:#4a6ee0}li{font-family:Helvetica,Arial,sans-serif;fo=
+nt-weight:400;color:#1c1c1c}.h1{font-family:Helvetica,Arial,sans-serif;font=
+-weight:700;font-size:32px;line-height:38px;color:#1c1c1c}.h2{font-family:H=
+elvetica,Arial,sans-serif;font-weight:700;font-size:24px;line-height:32px;c=
+olor:#1c1c1c}.h3{font-family:Helvetica,Arial,sans-serif;font-weight:700;fon=
+t-size:18px;line-height:24px;color:#1c1c1c}sup,sub{vertical-align:baseline;=
+position:relative;top:-0.4em}</style> <style type=3D"text/css">@media only =
+screen and (max-width:480px){.container{width:100%!important}.footer{width:=
+auto!important;margin-left:0}.mobile-hidden{display:none!important}.logo{di=
+splay:block!important;padding:0!important}.header img{max-width:100%!import=
+ant;height:auto!important;max-height:auto!important}.photo img{width:100%!i=
+mportant;max-width:100%!important;height:auto!important}.drop{display:block=
+!important;width:100%!important;float:left;clear:both}.footerlogo{display:b=
+lock!important;width:100%!important;padding-top:15px;float:left;clear:both}=
+.nav4,.nav5,.nav6{display:none!important}.tableBlock{width:100%!important}.=
+responsive-td{width:100%!important;display:block!important;padding:0!import=
+ant}.fluid,.fluid-centered{width:100%!important;max-width:100%!important;he=
+ight:auto!important;margin-left:auto!important;margin-right:auto!important}=
+.fluid-centered{margin-left:auto!important;margin-right:auto!important}tabl=
+e .stylingblock-content-wrapper{border:none!important}*{-webkit-text-size-a=
+djust:none;-ms-text-size-adjust:none;-webkit-font-smoothing:antialiased}.he=
+ight{height:auto!important}.hide{display:none!important}.stack{display:bloc=
+k!important;width:100%!important}.w100P{width:100%!important;height:auto!im=
+portant}.textC{text-align:center!important}.marginCenter table{margin:0 aut=
+o!important}.show{display:block!important;max-height:none!important;overflo=
+w:visible!important;line-height:normal!important}.showTable{display:inline-=
+block!important}.h1{font-family:Helvetica,Arial,sans-serif;font-weight:700;=
+font-size:28px;line-height:40px}.LogoMobilePadding{padding-left:16px!import=
+ant}.MobileCTAPadding{padding-right:16px!important}.MobileTableWidth{width:=
+91%!important}.w44P{width:44%!important}.w52P{width:52%!important}.h24{line=
+-height:24px!important;font-size:24px!important;height:24px!important}.w24{=
+width:24px!important}.w56{width:56px!important}.w80{width:80px!important}.w=
+104{width:104px!important}.hw64{width:64px!important;height:64px!important}=
+.hw158{width:158px!important;height:158px!important}.dirLTR{direction:ltr!i=
+mportant}.devicewidthinner{width:91%!important}}</style> <style type=3D"tex=
+t/css">:root{color-scheme:light dark;supported-color-schemes:light dark}@me=
+dia(prefers-color-scheme:dark){td,p,span,li{color:#fff!important}a{color:#0=
+27e6f}.footerlink{color:#fff!important;text-decoration:underline!important}=
+.footerline{background-color:none!important;border-bottom:solid 1px #fff!im=
+portant}.fbWhite{content:url('https://d15k2d11r6t6rl.cloudfront.net/public/=
+users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746030542259a00=
+8c5feabcd187/EBS-Facebook-White_Footer_Icon_1_1.png')!important}.igWhite{co=
+ntent:url('https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/6=
+69d5713-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746030542259a008c5feabcd187/EBS-In=
+stagram-White_Footer_Icon_1_1.png')!important}.twWhite{content:url('https:/=
+/d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-=
+bd7e-c542cff6dd6a/a8e16746030542259a008c5feabcd187/X_whiteicon_1.png')!impo=
+rtant}.liWhite{content:url('https://d15k2d11r6t6rl.cloudfront.net/public/us=
+ers/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746030542259a008c=
+5feabcd187/EBS-LinkedIn-White_Footer_Icon_1_1.png')!important}td .darkBody{=
+background-color:#000001!important}.lightimage{display:none!important}.dark=
+imageWrapper,.darkimage{display:block!important}.darkModeBG{background-colo=
+r:#323342!important}.DarkHeader{background-color:#f0f2fc!important}.darkMod=
+eDarkCopy{color:#000001!important}.darkModeLink{color:#4c7af1!important;fon=
+t-weight:bold!important}[data-ogsc] .darkBody{background-color:#000001!impo=
+rtant}[data-ogsc] .lightimage{display:none!important}[data-ogsc] .darkimage=
+Wrapper,[data-ogsc] .darkimage{display:block!important}}[data-ogsc] .lighti=
+mage{display:none!important}[data-ogsc] .darkimageWrapper,[data-ogsc] .dark=
+image{display:block!important}</style> </head> <body id=3D"body" class=3D"b=
+ody darkModeBG" bgcolor=3D"#F5F5F5" style=3D"-webkit-text-size-adjust: none=
+; -ms-text-size-adjust: none; -webkit-font-smoothing: antialiased; padding:=
+0;">
+<div style=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;b=
+order:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!im=
+portant;display:none!important;line-height:0px!important;"><img border=3D"0=
+" width=3D"1" height=3D"1" src=3D"http://tracksp.grammarly.com/q/eDBx2Gt2Rc=
+4kfuGUZsw-Pg~~/AARGbBA~/nO6PbZ2GkPv1eJl4SlXoeYcRmVLJz2nxKus4KriLKMDW2zsOoCi=
+jrGgX-T1bMogkdYOsInudpvGuMs4ZgJw0hzW3UIqlP2b48lLj3mSAe9U~" alt=3D""></div>
+<span style=3D"color:transparent;visibility:hidden;display:none;opacity:0;h=
+eight:0;width:0;font-size:0;">=F0=9F=95=92 Save time with smart AI writing =
+tools.</span><img src=3D"https://click.grammarly.com/s/eo/Jaik10rzaCTqvAoTc=
+CtOrF83L9t8Y_ZtwkFgnh57KrYcr51c58qsiGFYFIRHiDWP2GNhhtLwLxfL-PXG8Ra_t3UcPLeQ=
+5uZ6elg4mk3SuKuuW_iWeVMxwM0ZswNr1oMUMJ0IxTp3y7C0rMr_4iWBEKu35BkgK2u4BXTKHZD=
+L5UMcM1bgQQHbETky4AlTRb9HsjbkUU5ahbONyT-rKKx4C32iWYcirsjED_Od/E0izk5Ax9W813=
+eVuOptA0ccGW4YnIqPc/8" style=3D"border:0;width:1px;height:1px;border-width:=
+0px!important;display:none!important;line-height:0!important;" width=3D"1" =
+height=3D"1"> <div style=3D"display: none; max-height: 0px; overflow: hidde=
+n;"> &nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp; </div> <=
+!--USER INFO--> <!--DISCOUNT INFO YOU NEED TO UPDATE--> <!--DiscountUrl LIN=
+K--> <!--GLOBAL DEFINITIONS--> <!-- URL DEFINITIONS Unsubscribe/Preferences=
+ FOOTER DISCLOSURES RENEWAL DEFINITIONS FIRST NAME SNIPPETS Default USER NA=
+ME --> <custom name=3D"opencounter" type=3D"tracking"> <table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" width=3D"100%" class=
+=3D"darkModeBG" bgcolor=3D"#F5F5F5"> <tr> <td align=3D"center" valign=3D"to=
+p"> <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center=
+" width=3D"600" class=3D"container" style=3D"margin:0 auto;"> <tr> <td vali=
+gn=3D"top"> <!--Body--> <table cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" role=3D"presentation" style=3D"min-width: 100%; " class=3D"stylingbl=
+ock-content-wrapper"><tr><td class=3D"stylingblock-content-wrapper camarker=
+-inner"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%"> <tr> <td align=3D"left" class=3D"LogoMobilePadding" height=3D"82" vali=
+gn=3D"middle"> <a alias=3D"header-logo-homepage" href=3D"https://apc01.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2=
+Fc%2FfO5gb5olwyJCbmgigz5GTT9iDE4e8h8W8w-Vusvf8GUDhOFRgICdyx-uirU-46l9Hz7R1z=
+T13ywXu6T7ElcDYw6q4DS47rMltOXBgJZEtJSLmSSZ78H5LFDO_6BpdwSDdnFdBF-4p868FJ_7m=
+oT2Q1q-ozpzpgCH0_aU7PHycBWHdX3hhCbuPmBNYT7qdqf3XwK-XtxHa5L545DH-q5kkDnRRQvO=
+wBXFawigcMF4SluBAfHcFhvgdvzujcnXNRa1LfrB9wyPrkcvoTmOKBBaqnswPD6amrpjfJ7FRrU=
+4N73eJcCOZrGjRFuRmVjiAKalC_diS_E4jjlVPQkoUJNDc1dID3rQMoVlbX4nSbCSQBcIyVzSbe=
+rX1liBkJMfb8IXH5bMiGK-V4ey_QbaGFvEL2weTBWek_M5igD30M5lZejUBI95uCDk0gisAINkF=
+_vfxbPOxCkBYIXQCUUDesebG4jg2bejtdzVsMv4RvQLL8IvAlQ1uIfErjQlM_JibNXXQM_Hm-wh=
+Ht4R6HZR6icUC9_uG9xMZVKFx0M%2FzPRhrN8vg_rk26966ca6ZShfkzht5xDE%2F8&amp;data=
+=3D05%7C02%7C102767763%40students.swinburne.edu.my%7Ceae6722461084550ede308=
+dd92e1cf0b%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638828220745392654%=
+7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJ=
+XaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D%2FSv%2B=
+0OADjchTKULQ3CWpfDjtc%2F%2FFMNSXeGmcK%2BYxLiA%3D&amp;reserved=3D0" original=
+src=3D"https://click.grammarly.com/s/c/fO5gb5olwyJCbmgigz5GTT9iDE4e8h8W8w-V=
+usvf8GUDhOFRgICdyx-uirU-46l9Hz7R1zT13ywXu6T7ElcDYw6q4DS47rMltOXBgJZEtJSLmSS=
+Z78H5LFDO_6BpdwSDdnFdBF-4p868FJ_7moT2Q1q-ozpzpgCH0_aU7PHycBWHdX3hhCbuPmBNYT=
+7qdqf3XwK-XtxHa5L545DH-q5kkDnRRQvOwBXFawigcMF4SluBAfHcFhvgdvzujcnXNRa1LfrB9=
+wyPrkcvoTmOKBBaqnswPD6amrpjfJ7FRrU4N73eJcCOZrGjRFuRmVjiAKalC_diS_E4jjlVPQko=
+UJNDc1dID3rQMoVlbX4nSbCSQBcIyVzSberX1liBkJMfb8IXH5bMiGK-V4ey_QbaGFvEL2weTBW=
+ek_M5igD30M5lZejUBI95uCDk0gisAINkF_vfxbPOxCkBYIXQCUUDesebG4jg2bejtdzVsMv4Rv=
+QLL8IvAlQ1uIfErjQlM_JibNXXQM_Hm-whHt4R6HZR6icUC9_uG9xMZVKFx0M/zPRhrN8vg_rk2=
+6966ca6ZShfkzht5xDE/8" style=3D"text-decoration:none;border:0;display:inlin=
+e-block;" target=3D"_blank" title=3D"Grammarly"><img alt=3D"Grammarly" bord=
+er=3D"0" class=3D"lightimage" height=3D"34" src=3D"https://d15k2d11r6t6rl.c=
+loudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a=
+/a8e16746030542259a008c5feabcd187/Grammarly%20Primary%20Lockup_Light%20BG.p=
+ng" style=3D"display: block;" title=3D"Grammarly" width=3D"157"></a><!--[if=
+ !mso]><! --><div class=3D"darkimageWrapper" style=3D"mso-hide: all; displa=
+y: none;"> <a alias=3D"header-logo-homepage" href=3D"https://apc01.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2Fc%2=
+FOz_8sF_qC7Dt38Nisn2IPtMIfmTsBF45ELzRPyalpaWYdTpuSkaQrV1MYXJ4Lxl-U-a8Ucy4ak=
+wjTmiSszvvaRnycOjPQOungIvrc0vp6bbXwadkuF3fCZXPtmW7jf_31naxaXYS_yygDa2uvf_fF=
+Q8W-8_rta0M-YhZvJKFYAIFQkB7Akd5iKpcpy0avMd6QEttOedaNo3eqqXV9i0B6hHORvhtwKgX=
+bJ9RSNd_L6QewfttO_anFp-j0tBBIkpydbknTc-1aanyfukBxsfuiBZfMSmY3YC9ODMtq530jQt=
+401e6KR4VZ-Xp0-jMB_9blo7ygXu3vRg9vg3u7xCtvCQe9O4yPVHxZ6mxZcgPDtl2fY13Ed_-Zr=
+P_oAtn8sdf_JjH9NfbgZYdtBuPd844BILAzwV4tNSy8Kewveet0D0_L4JaecDbshAkuUD6IaHiS=
+Dt-h8BjC7-OgCstRvCt3eEWMgBkSTJbR-FoJbMPC0GzIwpdDyw-UgFugDI693bLN6pRmsRoYsMv=
+p70Aj28unp3qY4BcPAiMAhk%2FnIiXTOhbvlSEMHix1H9t7Ynqe8S2z9Gu%2F8&amp;data=3D0=
+5%7C02%7C102767763%40students.swinburne.edu.my%7Ceae6722461084550ede308dd92=
+e1cf0b%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638828220745417001%7CUn=
+known%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4=
+zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DiNxQ0P7LU2F0=
+%2BC%2BdNpEYLMUX%2FHDlcwEYIub33NXzJD0%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://click.grammarly.com/s/c/Oz_8sF_qC7Dt38Nisn2IPtMIfmTsBF45ELzRPyalpaWY=
+dTpuSkaQrV1MYXJ4Lxl-U-a8Ucy4akwjTmiSszvvaRnycOjPQOungIvrc0vp6bbXwadkuF3fCZX=
+PtmW7jf_31naxaXYS_yygDa2uvf_fFQ8W-8_rta0M-YhZvJKFYAIFQkB7Akd5iKpcpy0avMd6QE=
+ttOedaNo3eqqXV9i0B6hHORvhtwKgXbJ9RSNd_L6QewfttO_anFp-j0tBBIkpydbknTc-1aanyf=
+ukBxsfuiBZfMSmY3YC9ODMtq530jQt401e6KR4VZ-Xp0-jMB_9blo7ygXu3vRg9vg3u7xCtvCQe=
+9O4yPVHxZ6mxZcgPDtl2fY13Ed_-ZrP_oAtn8sdf_JjH9NfbgZYdtBuPd844BILAzwV4tNSy8Ke=
+wveet0D0_L4JaecDbshAkuUD6IaHiSDt-h8BjC7-OgCstRvCt3eEWMgBkSTJbR-FoJbMPC0GzIw=
+pdDyw-UgFugDI693bLN6pRmsRoYsMvp70Aj28unp3qY4BcPAiMAhk/nIiXTOhbvlSEMHix1H9t7=
+Ynqe8S2z9Gu/8" style=3D"text-decoration:none;border:0;display:inline-block;=
+" target=3D"_blank" title=3D"Grammarly"><img alt=3D"Grammarly" border=3D"0"=
+ class=3D"darkimage" height=3D"34" src=3D"https://d15k2d11r6t6rl.cloudfront=
+.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746=
+030542259a008c5feabcd187/Grammarly%20Primary%20Lockup_Dark%20BG.png" style=
+=3D"display: block;" title=3D"Grammarly" width=3D"157"></a></div><!--<![end=
+if]--></td><td align=3D"right" class=3D"MobileCTAPadding" height=3D"82" val=
+ign=3D"middle" width=3D"55%"> <span style=3D"font-family:Arial,Helvetica,sa=
+ns-serif;"><b><b><a alias=3D"header-hyperlink-upgrade" conversion=3D"false"=
+ data-linkto=3D"other" href=3D"https://apc01.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2Fc%2F6JZNx038PaTivmv7lgUEy=
+YZM4wB-KDO9kw5-ottrN-w-6t6KjjNJVcLkTR_DfF-nJnUuAcAzquPrbZroN05I0j-MFYtko-Kt=
+NFl1ew9-07L2TCd9B94JbpJGVJbBc2775o4yjKqTSrpuqj3bNqlFBqQvOA2Uzm-XeKr0SJKsrqX=
+tCSg_TFsG_mhrFk8KUNmpMZRx2mPLeYbeB5-GvL45N8CPbm5IM1jNR8PAl00bCntVNmAm1mJVqG=
+__jC53gbObfgOZGAES_HiPf1QJmHIuPi4PIFxrQfKUgt23PGQKOd5ibt98Np9LDCa2rWWeu5lVc=
+kS5sGhqV6z-md06tyLZBHkd8TsCwrrwrujc8F8gVF93QvtxyTplpM4sx1ucZYGdQUzYIGo0wi7k=
+7wU5q1_wDvNv8GAVWEgLeHYXDc-sYCYMqCU-hBD7mo7XwYfahG1fWKYLFRABoeAhQ_DFbZNeI12=
+en_yA-PCovL0bdBMB3eULPLdCcTFTj5UonTgHxiLUZCvtsvgx37pD6dDXYm6cPOuRhLMCpq-1kr=
+UO4YuqeyrkMSHHIIB72fEbWDBX1qjytRA%2FiB5SbUqydXFtl5rx_zxZ1lIXWS4zY9la%2F8&am=
+p;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7Ceae6722461084550=
+ede308dd92e1cf0b%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C6388282207454=
+30141%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsI=
+lAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DNJ=
+cWBGSUFCswyLuxQYa%2FGUsTmtG5jLXmm5LzRQcf5BQ%3D&amp;reserved=3D0" originalsr=
+c=3D"https://click.grammarly.com/s/c/6JZNx038PaTivmv7lgUEyYZM4wB-KDO9kw5-ot=
+trN-w-6t6KjjNJVcLkTR_DfF-nJnUuAcAzquPrbZroN05I0j-MFYtko-KtNFl1ew9-07L2TCd9B=
+94JbpJGVJbBc2775o4yjKqTSrpuqj3bNqlFBqQvOA2Uzm-XeKr0SJKsrqXtCSg_TFsG_mhrFk8K=
+UNmpMZRx2mPLeYbeB5-GvL45N8CPbm5IM1jNR8PAl00bCntVNmAm1mJVqG__jC53gbObfgOZGAE=
+S_HiPf1QJmHIuPi4PIFxrQfKUgt23PGQKOd5ibt98Np9LDCa2rWWeu5lVckS5sGhqV6z-md06ty=
+LZBHkd8TsCwrrwrujc8F8gVF93QvtxyTplpM4sx1ucZYGdQUzYIGo0wi7k7wU5q1_wDvNv8GAVW=
+EgLeHYXDc-sYCYMqCU-hBD7mo7XwYfahG1fWKYLFRABoeAhQ_DFbZNeI12en_yA-PCovL0bdBMB=
+3eULPLdCcTFTj5UonTgHxiLUZCvtsvgx37pD6dDXYm6cPOuRhLMCpq-1krUO4YuqeyrkMSHHIIB=
+72fEbWDBX1qjytRA/iB5SbUqydXFtl5rx_zxZ1lIXWS4zY9la/8" style=3D"color:#027E6F=
+;text-decoration:none;" title=3D""><b>Upgrade Now</b>&nbsp;=E2=86=92</a></b=
+></b></span></td></tr></table> </td> </tr> <tr> <td valign=3D"top" bgcolor=
+=3D"#FFFFFF" class=3D"darkBody"> <table cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation" style=3D"background-color: transparen=
+t; min-width: 100%; " class=3D"stylingblock-content-wrapper"> <tr> <td styl=
+e=3D"padding: 0px; " class=3D"stylingblock-content-wrapper camarker-inner">=
+ <table cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" style=3D"=
+width: 100%;"> <tr> <td valign=3D"top" class=3D"responsive-td" style=3D"wid=
+th: 100%; padding-top: 0px;"> <table cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" style=3D"min-width: 100%; " class=3D"sty=
+lingblock-content-wrapper"> <tr> <td class=3D"stylingblock-content-wrapper =
+camarker-inner" align=3D"center"> <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%"> <tr> <td align=3D"center" valign=3D"top"> <a=
+ href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fclick.grammarly.com%2Fs%2Fc%2Fh0noVo6EHQ0PpW_J7LVoFzIJrlKTkdz5nJ_Z7xF73R3=
+p7m3nl5zCQeEi5QEuuZZo6u-h56-gsEVxwGUwowEQgOoDtRIlFEf_AaZYXQf1m_dzmlFpxDYWGN=
+7UojSnUiSFeytme9Z1OWq5kI6ghbZCvuycZRSVij3WtuvSPIFOzEWfJ_8tplfIp5NPV4xvv4eeF=
+3N9C_gsreMtyl3hWG9St8aVKalx2ITKKTZEKWGswwmahI7WGCMYNrzSxqbw8bpppgQ9rzEz0rr0=
+mwG5jh0maeu0r4ul61SJEop4w-290P8M3i1XCyF9rcQX0kWRirJQN5NwjQRu97T84yxHKnZI7Bc=
+Vy7OzC4OIi2h5SZOsvasy6fXlbpz3BY7R2iSU7oUw-3Efw2trEKL77zN0q1P0tai7EfDOvM-5Lz=
+Zgyj7P8r3qsUpW_KGK3D0wWR84dD3bNF3N2eRg_XyAVg398C5Y7XW4V4RAVAGZaVDP-CeW2tMdW=
+Mt35oKNeeIUJYe4FaG_E0HW8ho9neY1fSmAYASQBVdbSUJnzexEtQ4HDj2SrrHMCjnb13CnG4hq=
+_MsrFJHxS5AukSxoufZexXEHxcRjxDtC6KgV3UwsYqO7gxPRhpWbSTG4Bn3f9cU26enuYwiSix7=
+_JUsWe2pSl_kyj9A33IhMcBuVbAdP7RSQnX7KLenASU3aJjsihvgmDJHCsE99eKfTtIiuqwFRux=
+9fMetMfaWaf6kJmJuw5R_7beWCVHDfRBCT39hTg7p1SwbMM7RTr_bLpq8Nr557cDG5werM0KlWr=
+DDDW7IcbYiK8SoOpTJiMbEcZO0R-RBRXJdjRfVR4JPM2kG0_3GWbmmaEYNZH2hDWFSJ9EunhKgB=
+3o4veEI6Ouir2nH0GViBZvU0fVIxDERmFqwwaSUcj50Bl3YN99QpphogTxpeKPQsGNrSI-4N4o6=
+-JLkyQMl3TLkLtcPdccm05FVgvf2RCn-AOqoEzOPzV78JoDs2eRlJWtVkMxQD9brDVA2KD4ivYY=
+gAUEm81TQ%2Fywl5eNpeEq6AfBS7UiaC2AJ8uu5ECyup%2F8&amp;data=3D05%7C02%7C10276=
+7763%40students.swinburne.edu.my%7Ceae6722461084550ede308dd92e1cf0b%7C3f639=
+a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638828220745444322%7CUnknown%7CTWFpbG=
+Zsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiT=
+WFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DCDcke%2FynzF5feEizZNdbA37M=
+YbNinvW9cAEEBBpOh%2FE%3D&amp;reserved=3D0" originalsrc=3D"https://click.gra=
+mmarly.com/s/c/h0noVo6EHQ0PpW_J7LVoFzIJrlKTkdz5nJ_Z7xF73R3p7m3nl5zCQeEi5QEu=
+uZZo6u-h56-gsEVxwGUwowEQgOoDtRIlFEf_AaZYXQf1m_dzmlFpxDYWGN7UojSnUiSFeytme9Z=
+1OWq5kI6ghbZCvuycZRSVij3WtuvSPIFOzEWfJ_8tplfIp5NPV4xvv4eeF3N9C_gsreMtyl3hWG=
+9St8aVKalx2ITKKTZEKWGswwmahI7WGCMYNrzSxqbw8bpppgQ9rzEz0rr0mwG5jh0maeu0r4ul6=
+1SJEop4w-290P8M3i1XCyF9rcQX0kWRirJQN5NwjQRu97T84yxHKnZI7BcVy7OzC4OIi2h5SZOs=
+vasy6fXlbpz3BY7R2iSU7oUw-3Efw2trEKL77zN0q1P0tai7EfDOvM-5LzZgyj7P8r3qsUpW_KG=
+K3D0wWR84dD3bNF3N2eRg_XyAVg398C5Y7XW4V4RAVAGZaVDP-CeW2tMdWMt35oKNeeIUJYe4Fa=
+G_E0HW8ho9neY1fSmAYASQBVdbSUJnzexEtQ4HDj2SrrHMCjnb13CnG4hq_MsrFJHxS5AukSxou=
+fZexXEHxcRjxDtC6KgV3UwsYqO7gxPRhpWbSTG4Bn3f9cU26enuYwiSix7_JUsWe2pSl_kyj9A3=
+3IhMcBuVbAdP7RSQnX7KLenASU3aJjsihvgmDJHCsE99eKfTtIiuqwFRux9fMetMfaWaf6kJmJu=
+w5R_7beWCVHDfRBCT39hTg7p1SwbMM7RTr_bLpq8Nr557cDG5werM0KlWrDDDW7IcbYiK8SoOpT=
+JiMbEcZO0R-RBRXJdjRfVR4JPM2kG0_3GWbmmaEYNZH2hDWFSJ9EunhKgB3o4veEI6Ouir2nH0G=
+ViBZvU0fVIxDERmFqwwaSUcj50Bl3YN99QpphogTxpeKPQsGNrSI-4N4o6-JLkyQMl3TLkLtcPd=
+ccm05FVgvf2RCn-AOqoEzOPzV78JoDs2eRlJWtVkMxQD9brDVA2KD4ivYYgAUEm81TQ/ywl5eNp=
+eEq6AfBS7UiaC2AJ8uu5ECyup/8" target=3D"_blank" title=3D""><img alt=3D"$75/y=
+ear Grammarly Pro" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/user=
+s/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746030542259a008c5f=
+eabcd187/MOPS%20-%20430/email1_hero.png" style=3D"display: block; padding: =
+0px; text-align: center; height: auto; width: 100%; max-width: 600px;" widt=
+h=3D"600"></a> </td> </tr> </table> </td> </tr> </table> <table cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" style=3D"min-=
+width: 100%; " class=3D"stylingblock-content-wrapper"> <tr> <td class=3D"st=
+ylingblock-content-wrapper camarker-inner"> <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%"> <tr> <td height=3D"40" style=3D"li=
+ne-height:40px; font-size:40px; height:40px;"> &nbsp; </td> </tr> </table> =
+</td> </tr> </table> <table cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" role=3D"presentation" style=3D"min-width: 100%; " class=3D"stylingblock=
+-content-wrapper"> <tr> <td class=3D"stylingblock-content-wrapper camarker-=
+inner"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%"> <tr> <td align=3D"center" style=3D"padding-bottom: 24px;" valign=3D"to=
+p"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"Mobile=
+TableWidth" width=3D"87%"> <tr> <td align=3D"center" valign=3D"top"> <span =
+class=3D"h1" style=3D"font-family: Helvetica, Arial, sans-serif; font-weigh=
+t: 700; font-size:30px; line-height:38px; color:#1C1C1C;">What Would You Do=
+ With <br class=3D"mobile-hidden">More Time?</span> </td> </tr> </table> </=
+td> </tr> </table> </td> </tr> </table> <table cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" role=3D"presentation" style=3D"background-color: tra=
+nsparent; min-width: 100%; " class=3D"stylingblock-content-wrapper"> <tr> <=
+td style=3D"padding: 0px; " class=3D"stylingblock-content-wrapper camarker-=
+inner"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%"> <tr> <td align=3D"center" valign=3D"top"> <table border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" class=3D"MobileTableWidth" width=3D"74%"> <tr> =
+<td align=3D"left" style=3D"font-size:16px;line-height:24px;" valign=3D"top=
+"> Good communication, especially when powered by AI, can save you serious =
+time each week. Grammarly Pro helps you work faster by turning ideas into p=
+olished reports, replies, and rewrites in seconds.<br> <br> Access up to 2,=
+000 AI prompts per month when you <b>upgrade to Grammarly Pro, now only $75=
+* for an annual plan</b>. Offer ends May 21. </td> </tr> </table> </td> </t=
+r> </table> </td> </tr> </table> <table cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation" style=3D"min-width: 100%; " class=3D"=
+stylingblock-content-wrapper"> <tr> <td class=3D"stylingblock-content-wrapp=
+er camarker-inner"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0"> <tr> <td style=3D"line-height:40px; font-size:40px; height=
+:40px;" height=3D"40"> &nbsp; </td> </tr> </table> </td> </tr> </table> <ta=
+ble cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation=
+" style=3D"background-color: transparent; min-width: 100%; " class=3D"styli=
+ngblock-content-wrapper"> <tr> <td class=3D"stylingblock-content-wrapper ca=
+marker-inner"> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" role=3D"presentation" align=3D"center"> <tr> <td align=3D"center=
+"> <!--[if mso]><v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmln=
+s:w=3D"urn:schemas-microsoft-com:office:word" style=3D"height:36pt; v-text-=
+anchor:middle; width:120px; mso-position-horizontal: center;mso-position-ve=
+rtical: center" arcsize=3D"10%" strokecolor=3D"#027E6F" strokeweight=3D"0pt=
+" fillcolor=3D"#027E6F"> <w:anchorlock/> <v:textbox inset=3D"0,0,0,0"><p st=
+yle=3D"text-align: center; font-family: Helvetica, Sans-serif; color: #FFFF=
+FF; font-size: 14px; font-weight: 700; letter-spacing: normal; mso-line-hei=
+ght-rule: exactly; line-height: 32px"><![endif]--> <!--[if !mso]><!--> <tab=
+le border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation"> =
+<tr> <td class=3D"innertd buttonblock" bgcolor=3D"#027E6F" style=3D"mso-pad=
+ding-alt:0px 32px 0px 32px; border-radius:5px; height: 48px; width: 100%; t=
+ext-align: center; background-color: #027E6F; vertical-align: middle"><!--<=
+![endif]--><a target=3D"_blank" class=3D"buttonstyles" style=3D"mso-line-he=
+ight-rule:exactly; text-align:center; font-family: Helvetica, sans-serif; c=
+olor: #FFFFFF; font-size: 14px; font-weight: 700; letter-spacing: normal; l=
+ine-height: 22px; padding-right: 34px; padding-left: 34px; text-decoration:=
+ none; display: table-cell; height: 50px; border-radius: 5px; vertical-alig=
+n: middle; box-sizing: content-box" href=3D"https://apc01.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2Fc%2FdH-VD68D=
+XuZ9qoaKE0g-njU-qZ-4iEGkYvgL7IMszjukOzzJitUvtWq9Y57b1Y5PsmfpPmLEoD3l5meNOzh=
+tV2rbxApCNgL6IIrpH03E_w0caTn4Ku04j0qSu6iLLagO4aJYfrIy2qJEwy7UzTHUmOmR83lGgi=
+Psb21G7g0F6-miT2xbLLoiPlRH_WfnP3sssRrVgYqtSGgjFS0rdBu4P2EFLl6D5NY9x1ggKUN4D=
+k2Xpm1Y6uPNvziUjcBMMH7Hyom1GlxWv2lIOav7XxVz6C1GJyrxbk9zkbE7nbpYghLu6H2e-qGF=
+nBL--raOeDO0LrGAARwYj7S6nBDomfDMBx_qXCvQPkYaJP-SiIf1WkqV1FC91kM9h7Gj-s--Wtf=
+J_lBzXRF3Ym1TM1bWXtRHmpNk1tsf5V5TtpjW99BULcW1IpPW705okwFFkTGwz5lFRTiVaTX_yR=
+o_5CFyq7FDgGn620qQzIhJBh4akk1zQLZ9ZAvgmhyZQwiiMBKGGpOMSnhy9jXXMBiWy7UBbtpse=
+qG0NTYyV4Wcp190Z9OlNhmKLuq85RvkINB57uv2UTKQA6CQrjGmVKbCtIlpHkCEVilTf11HYKzD=
+yAV8kkCZQ9tiOTiaz9vek3eZHSohVg2VzWoP27M3sLMq0Sn4NYfZTPSwsa0F3E_Jc3Vldyht-Rc=
+WDaKIG6rPpvbI-vGxZaldjQ1Dc0Qa-Ac7Cs-THkG742GkyWgV2guyxEBzQBkSEXprxjWZZnIcbm=
+dosFdk8-Y0xpez4hqe2nI7z_BTlG_63oJg4riEGXukYqqmyNjtMsV9Y5VkE1QGzcilt7keRMqE_=
+RFfgnBtzFHUUz_0U9dwKNd18x-A3jfOmC4ehCF8o1XvwLkn_k3BsPQ0RXdv-hQPRb0WU8D6HfGA=
+VJqBonIm7aulbhaSK8ZwkMVLVUSE9dI6MoQ%2F807adBCOpzhrD7465tzx-YoKeR01rJlF%2F8&=
+amp;data=3D05%7C02%7C102767763%40students.swinburne.edu.my%7Ceae67224610845=
+50ede308dd92e1cf0b%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C63882822074=
+5462054%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCI=
+sIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D=
+FdU715PQG8PgprIJGw0TCg9ZtFJWbUYhUFa4w9aCAXI%3D&amp;reserved=3D0" originalsr=
+c=3D"https://click.grammarly.com/s/c/dH-VD68DXuZ9qoaKE0g-njU-qZ-4iEGkYvgL7I=
+MszjukOzzJitUvtWq9Y57b1Y5PsmfpPmLEoD3l5meNOzhtV2rbxApCNgL6IIrpH03E_w0caTn4K=
+u04j0qSu6iLLagO4aJYfrIy2qJEwy7UzTHUmOmR83lGgiPsb21G7g0F6-miT2xbLLoiPlRH_Wfn=
+P3sssRrVgYqtSGgjFS0rdBu4P2EFLl6D5NY9x1ggKUN4Dk2Xpm1Y6uPNvziUjcBMMH7Hyom1Glx=
+Wv2lIOav7XxVz6C1GJyrxbk9zkbE7nbpYghLu6H2e-qGFnBL--raOeDO0LrGAARwYj7S6nBDomf=
+DMBx_qXCvQPkYaJP-SiIf1WkqV1FC91kM9h7Gj-s--WtfJ_lBzXRF3Ym1TM1bWXtRHmpNk1tsf5=
+V5TtpjW99BULcW1IpPW705okwFFkTGwz5lFRTiVaTX_yRo_5CFyq7FDgGn620qQzIhJBh4akk1z=
+QLZ9ZAvgmhyZQwiiMBKGGpOMSnhy9jXXMBiWy7UBbtpseqG0NTYyV4Wcp190Z9OlNhmKLuq85Rv=
+kINB57uv2UTKQA6CQrjGmVKbCtIlpHkCEVilTf11HYKzDyAV8kkCZQ9tiOTiaz9vek3eZHSohVg=
+2VzWoP27M3sLMq0Sn4NYfZTPSwsa0F3E_Jc3Vldyht-RcWDaKIG6rPpvbI-vGxZaldjQ1Dc0Qa-=
+Ac7Cs-THkG742GkyWgV2guyxEBzQBkSEXprxjWZZnIcbmdosFdk8-Y0xpez4hqe2nI7z_BTlG_6=
+3oJg4riEGXukYqqmyNjtMsV9Y5VkE1QGzcilt7keRMqE_RFfgnBtzFHUUz_0U9dwKNd18x-A3jf=
+OmC4ehCF8o1XvwLkn_k3BsPQ0RXdv-hQPRb0WU8D6HfGAVJqBonIm7aulbhaSK8ZwkMVLVUSE9d=
+I6MoQ/807adBCOpzhrD7465tzx-YoKeR01rJlF/8" title=3D"" alias=3D"" conversion=
+=3D"false" data-linkto=3D"other">Get Pro</a><!--[if !mso]><!--></td> </tr> =
+</table> <!--<![endif]--> <!--[if mso]></p></v:textbox> </v:roundrect><![en=
+dif]--> </td> </tr> </table> </td> </tr> </table> <table cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"100%" role=3D"presentation" style=3D"min-width: =
+100%; " class=3D"stylingblock-content-wrapper"> <tr> <td class=3D"stylingbl=
+ock-content-wrapper camarker-inner"> <table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0"> <tr> <td style=3D"line-height:64px; font-=
+size:64px; height:64px;" height=3D"64"> &nbsp; </td> </tr> </table> </td> <=
+/tr> </table> </td> </tr> </table> </td> </tr> </table> </td> </tr> <tr> <t=
+d valign=3D"top"> <table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ role=3D"presentation" style=3D"min-width: 100%; " class=3D"stylingblock-co=
+ntent-wrapper"> <tr> <td class=3D"stylingblock-content-wrapper camarker-inn=
+er"> <!-- Start Footer --> <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"footerdevice" width=3D"100%"> <tbody> <tr=
+> <td align=3D"center"> <table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" class=3D"devicewidthinner" width=3D"97%"> <tbody> <tr=
+> <td align=3D"left" colspan=3D"2" height=3D"35" style=3D"font-size: 1px; l=
+ine-height: 1px;" valign=3D"top">&nbsp;</td> </tr> <tr> <td align=3D"center=
+"> <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"320" class=3D"container"> <tbody> <tr> <td align=3D"center" width=
+=3D"80"><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Fclick.grammarly.com%2Fs%2Fc%2FL2qoPnf_A73Jh7R5ED6dlHOwEbtNNGMLn=
+5mFX4Ts8FZtKpgOFXsQbin25sDspp99BF7K7SgsLwZ72Ucf5Hxp0is0Ua2-cA4dyLPuzLY61Tnb=
+_t2Dc6xhx4fGl2y4i8cvBkceHJ7n8-mVGARZW1vNh3YQaxwnFXKhNHiUnkrSfyN8msKpSjZgOj9=
+sQC20WAw-M2ps07ohntJc74GHLkuqLwbU4hPNqJ08hHcxc3QPJzJmnxxkD2inHoreWDQ_-aRc6u=
+8YSP0xn49vJIH1fgPTOmLyAaz8-AcWnh4uXMsDtNHAJrrC9kUN6XKkSWpQnsu_3ekfkU82IrXgQ=
+1AcSQ6yy1hJD9FBUqVc5IAwKIbnZbzRHiP_A-WazmyJ-CDMi9ylG8Q9-UuKGQ0ctD0Kbq5LVAAo=
+1DKRE8fpW-Lm21oW_v40cOn23X1etWNdvEq6e1nsae7Hn5C-cNkW6PApp9rP3UI3p8Q4iz2hOO3=
+Dt_03eXY48Bqq_Gt4uvMxOImTfHh_37k6SVllrfX3OeWiqe-j3foWCCNvhL-1LIZCGkUWjE3SJ3=
+W2P_yg1kxnYYHmWhO95foyrA%2FPCQwF7nZVJjpiW9K-BuYGQ4-UngOcei-%2F8&amp;data=3D=
+05%7C02%7C102767763%40students.swinburne.edu.my%7Ceae6722461084550ede308dd9=
+2e1cf0b%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638828220745479546%7CU=
+nknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW=
+4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3Dj43trZZvETW=
+d0cuj5NJS9eadIH%2Bq1DIIEjzfhXWMIHo%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://click.grammarly.com/s/c/L2qoPnf_A73Jh7R5ED6dlHOwEbtNNGMLn5mFX4Ts8FZtKpg=
+OFXsQbin25sDspp99BF7K7SgsLwZ72Ucf5Hxp0is0Ua2-cA4dyLPuzLY61Tnb_t2Dc6xhx4fGl2=
+y4i8cvBkceHJ7n8-mVGARZW1vNh3YQaxwnFXKhNHiUnkrSfyN8msKpSjZgOj9sQC20WAw-M2ps0=
+7ohntJc74GHLkuqLwbU4hPNqJ08hHcxc3QPJzJmnxxkD2inHoreWDQ_-aRc6u8YSP0xn49vJIH1=
+fgPTOmLyAaz8-AcWnh4uXMsDtNHAJrrC9kUN6XKkSWpQnsu_3ekfkU82IrXgQ1AcSQ6yy1hJD9F=
+BUqVc5IAwKIbnZbzRHiP_A-WazmyJ-CDMi9ylG8Q9-UuKGQ0ctD0Kbq5LVAAo1DKRE8fpW-Lm21=
+oW_v40cOn23X1etWNdvEq6e1nsae7Hn5C-cNkW6PApp9rP3UI3p8Q4iz2hOO3Dt_03eXY48Bqq_=
+Gt4uvMxOImTfHh_37k6SVllrfX3OeWiqe-j3foWCCNvhL-1LIZCGkUWjE3SJ3W2P_yg1kxnYYHm=
+WhO95foyrA/PCQwF7nZVJjpiW9K-BuYGQ4-UngOcei-/8" style=3D"text-decoration: no=
+ne;"><img alt=3D"facebook" border=3D"0" height=3D"22" class=3D"fbWhite" src=
+=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713=
+-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746030542259a008c5feabcd187/facebook_foot=
+er_icon.png" style=3D"width: 12px; height: 21px; max-width: 21px; border: n=
+one; outline: none; text-decoration: none; font-size: 19px; font-family: He=
+lvetica, Arial, sans-serif; color: #3b5998; font-weight: bold;" width=3D"12=
+"></a></td> <td align=3D"center" width=3D"80"><a href=3D"https://apc01.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2=
+Fc%2F5Jtmvfw6UDsXJGmH4CngNF17nv_-ArG3KvZhwKWzON9CbA7ykScfKzL4FwvKnHfoWDgh44=
+YEdZVCZsv6N-OwWi4l4x7PzNUfgAsQ9h2x02iniSEY9_s2eo0ivoC-uj4AEQnm3e0v5QtVkvPas=
+k8bVlKjgU4vmt_q7-rY90U5X3WDyo4Je_TtW5Dv3vLjLrF5QLcoxXJddGQPuOosABC-EF5fkCMN=
+dY_cCMIZYng1Icd52RgY5l2C1gYrXRJ5e5faIqLR-SPYxRi4zr_NHAZzHv07azHAv7psspOP-DL=
+6Z6_4h_rvYhrFM8rrQWOAc2_bo6QcoEuzj8jCdCQZ8Vsz7LyqWPS9eyMXEY8tzaCMKHdkeFPzgJ=
+CeLCWTeK-2WUkSTZIyrAn8uwHk3aC_DHczdS4zmeUdKz7rcFgjj9VtLWeJffW4YOjZBE_9gUbuz=
+CU4MdmFUtU1hWd9O1R5ybwP77Ks_XLXCxK3ueQIOXbsmCkKRmhRXr26emVQsgt-Vd8hSmHI57Yv=
+RiXgqnsRsuQTLvNf6KkQeTf8dGI8giIZwRpib9xhJIJ06zbDl1yLs1hK9zKUfsrofXaWdw%2FZe=
+tvCwpTBIwozavscG3Vg4IxIyCS_Otv%2F8&amp;data=3D05%7C02%7C102767763%40student=
+s.swinburne.edu.my%7Ceae6722461084550ede308dd92e1cf0b%7C3f639a9b27c8440382b=
+1ebfb88052d15%7C0%7C0%7C638828220745492356%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0=
+eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjo=
+yfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3Dtj1cwYz5F9cPfkV02%2F96ld1qVagsvvCbvGPWcn=
+So39I%3D&amp;reserved=3D0" originalsrc=3D"https://click.grammarly.com/s/c/5=
+Jtmvfw6UDsXJGmH4CngNF17nv_-ArG3KvZhwKWzON9CbA7ykScfKzL4FwvKnHfoWDgh44YEdZVC=
+Zsv6N-OwWi4l4x7PzNUfgAsQ9h2x02iniSEY9_s2eo0ivoC-uj4AEQnm3e0v5QtVkvPask8bVlK=
+jgU4vmt_q7-rY90U5X3WDyo4Je_TtW5Dv3vLjLrF5QLcoxXJddGQPuOosABC-EF5fkCMNdY_cCM=
+IZYng1Icd52RgY5l2C1gYrXRJ5e5faIqLR-SPYxRi4zr_NHAZzHv07azHAv7psspOP-DL6Z6_4h=
+_rvYhrFM8rrQWOAc2_bo6QcoEuzj8jCdCQZ8Vsz7LyqWPS9eyMXEY8tzaCMKHdkeFPzgJCeLCWT=
+eK-2WUkSTZIyrAn8uwHk3aC_DHczdS4zmeUdKz7rcFgjj9VtLWeJffW4YOjZBE_9gUbuzCU4Mdm=
+FUtU1hWd9O1R5ybwP77Ks_XLXCxK3ueQIOXbsmCkKRmhRXr26emVQsgt-Vd8hSmHI57YvRiXgqn=
+sRsuQTLvNf6KkQeTf8dGI8giIZwRpib9xhJIJ06zbDl1yLs1hK9zKUfsrofXaWdw/ZetvCwpTBI=
+wozavscG3Vg4IxIyCS_Otv/8" style=3D"text-decoration: none;"><img alt=3D"inst=
+agram" border=3D"0" height=3D"26" class=3D"igWhite" src=3D"https://d15k2d11=
+r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542=
+cff6dd6a/a8e16746030542259a008c5feabcd187/instagram_footer_icon.png" style=
+=3D"width: 26px; height: 25px; max-width: 26px; border: none; outline: none=
+; text-decoration: none; font-size: 19px; font-family: Helvetica Neue, Aria=
+l, sans-serif; color: rgb(0, 172, 237); font-weight: bold;" width=3D"26"></=
+a></td> <td align=3D"center" width=3D"80"><a href=3D"https://apc01.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2Fc%2=
+Fq_AMPjoyGzqD0G6xb8hTNVjtvO3BmxcDmRGMguZQKFIf0UfbZzD9Ff0Q6FtaXZUAJ7r6eRTskg=
+wOOSZxI0_Rs9wEBcXAJNVzcgeNkj4jpG7a-ZyevLeeeBIJrUMTm6XMM6mt29X6Cs-mfsQkAohl0=
+kzoPWBeYC-k3fc0_Bz7C_Y1HxbWdj634dlC9NBWViU-MU6T16YCxugYCdDCBcebMSkLDckgq9_F=
+C-OR1ur5zZpHuEj1lWaT2oITKTjE20tSz_clUVsHH8XVYCQ_9Clsv3sURocctQ2DoKpOUgtixsz=
+9fLRq7TCsiGO07Kt9zw3f2ecpGw0M0sw2Z8yivXtVDvOrxj1Jk3_69mfohCVlqj71WDYEP3VKQo=
+cZ0MD6hy5tfn13DXx9fG3kg6aNyfalVYoQ-DyMIpRgtd5jcq4KsUvHpSFM88k8u9LkaUBtMl9Js=
+l9XpkvrKidxrbkZzMwxPaNAPEMGqSnIyl_1L8yO0qwrl6zMpboPF6HEW6kgYeUXmO40dZN5txvI=
+vPzLpB1JOlFbQ_Px8_yx2Wp0zz5fcquOnUCqv19AAW0okfJBYH-v6CtyCEolNTsMzeAev9oM060=
+LMTU%2FdALRlGc4J1gLn5Y-pzUbP8ynMYL59mbr%2F8&amp;data=3D05%7C02%7C102767763%=
+40students.swinburne.edu.my%7Ceae6722461084550ede308dd92e1cf0b%7C3f639a9b27=
+c8440382b1ebfb88052d15%7C0%7C0%7C638828220745506234%7CUnknown%7CTWFpbGZsb3d=
+8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbC=
+IsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DuVjxdsTiyModCMzPb4Dmd7X8mXZArsE=
+pxWZ27XhWzno%3D&amp;reserved=3D0" originalsrc=3D"https://click.grammarly.co=
+m/s/c/q_AMPjoyGzqD0G6xb8hTNVjtvO3BmxcDmRGMguZQKFIf0UfbZzD9Ff0Q6FtaXZUAJ7r6e=
+RTskgwOOSZxI0_Rs9wEBcXAJNVzcgeNkj4jpG7a-ZyevLeeeBIJrUMTm6XMM6mt29X6Cs-mfsQk=
+Aohl0kzoPWBeYC-k3fc0_Bz7C_Y1HxbWdj634dlC9NBWViU-MU6T16YCxugYCdDCBcebMSkLDck=
+gq9_FC-OR1ur5zZpHuEj1lWaT2oITKTjE20tSz_clUVsHH8XVYCQ_9Clsv3sURocctQ2DoKpOUg=
+tixsz9fLRq7TCsiGO07Kt9zw3f2ecpGw0M0sw2Z8yivXtVDvOrxj1Jk3_69mfohCVlqj71WDYEP=
+3VKQocZ0MD6hy5tfn13DXx9fG3kg6aNyfalVYoQ-DyMIpRgtd5jcq4KsUvHpSFM88k8u9LkaUBt=
+Ml9Jsl9XpkvrKidxrbkZzMwxPaNAPEMGqSnIyl_1L8yO0qwrl6zMpboPF6HEW6kgYeUXmO40dZN=
+5txvIvPzLpB1JOlFbQ_Px8_yx2Wp0zz5fcquOnUCqv19AAW0okfJBYH-v6CtyCEolNTsMzeAev9=
+oM060LMTU/dALRlGc4J1gLn5Y-pzUbP8ynMYL59mbr/8" style=3D"text-decoration: non=
+e;"><img alt=3D"linkedin" border=3D"0" class=3D"liWhite" height=3D"18" src=
+=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713=
+-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746030542259a008c5feabcd187/linkedin_foot=
+er_icon2.png" style=3D"width: 19px; height: 18px; max-width: 19px; border: =
+none; outline: none; text-decoration: none; font-size: 19px; font-family: H=
+elvetica, Arial, sans-serif; color: rgb(0, 123, 182); font-weight: bold;" w=
+idth=3D"19"></a></td> <td align=3D"center" width=3D"80"><a href=3D"https://=
+apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarly=
+.com%2Fs%2Fc%2FMXpN_RxrmtRyMEaJ-CZ7Bu3qUT9q-YCNPs_5B2jZ7Gi9Jy0dnOFak4b0rher=
+AoARmfB70i16kRiZwTxwltDAmFS3OOLxQyHJHwuak6EprrSmtx_DYEj4dOacA4E644JX6Px-HVQ=
+w-0ygMiFDR2pju1KQQ9r2bKWubq6RFMsQlv0odzxJme5k9XfhjWcJ5mtJS7YAL4HzZd55j7qvRW=
+FaYobC2IsU33E5vJaFUMfJhcPFdSKWsdSBcZ-UJHLz4d-5gYf9m-2V3Oggm7-ULnU4Sz7EDuSdv=
+B6u1RhCRQYzq-mVMsT26RE7nMH7zAciNqwfDMYRdnbe7Gw-vRDV7HNeppzKGvH80fxrJcJRJfes=
+hWtAOzho3Hpr3yuP-QkE5oT0-DGe9dKYrwL7rGvChX8E-zlBpL4AEHYQxb4LyEGmn6-agCyCZVT=
+AM9_Fdc7BFUH03xWA8y5MLc5R4dVZ0iwB68QAexX7rf3wGOQHX_Unwi0H3E1dbAoZfjvIy1VUQh=
+DiMQ3Zdz2W5gz5UrETbMm7tXyneMjQF5u2Rm8mvFEcKgvc3FNTRi3Ctw%2FaRbA8NDMavzjRbem=
+xEQI_iFC3iB9oozV%2F8&amp;data=3D05%7C02%7C102767763%40students.swinburne.ed=
+u.my%7Ceae6722461084550ede308dd92e1cf0b%7C3f639a9b27c8440382b1ebfb88052d15%=
+7C0%7C0%7C638828220745518271%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydW=
+UsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%=
+7C%7C%7C&amp;sdata=3DjolmWXlvQ4D7wNuwBAhitHF022AVg5RSamOcW0oeGT8%3D&amp;res=
+erved=3D0" originalsrc=3D"https://click.grammarly.com/s/c/MXpN_RxrmtRyMEaJ-=
+CZ7Bu3qUT9q-YCNPs_5B2jZ7Gi9Jy0dnOFak4b0rherAoARmfB70i16kRiZwTxwltDAmFS3OOLx=
+QyHJHwuak6EprrSmtx_DYEj4dOacA4E644JX6Px-HVQw-0ygMiFDR2pju1KQQ9r2bKWubq6RFMs=
+Qlv0odzxJme5k9XfhjWcJ5mtJS7YAL4HzZd55j7qvRWFaYobC2IsU33E5vJaFUMfJhcPFdSKWsd=
+SBcZ-UJHLz4d-5gYf9m-2V3Oggm7-ULnU4Sz7EDuSdvB6u1RhCRQYzq-mVMsT26RE7nMH7zAciN=
+qwfDMYRdnbe7Gw-vRDV7HNeppzKGvH80fxrJcJRJfeshWtAOzho3Hpr3yuP-QkE5oT0-DGe9dKY=
+rwL7rGvChX8E-zlBpL4AEHYQxb4LyEGmn6-agCyCZVTAM9_Fdc7BFUH03xWA8y5MLc5R4dVZ0iw=
+B68QAexX7rf3wGOQHX_Unwi0H3E1dbAoZfjvIy1VUQhDiMQ3Zdz2W5gz5UrETbMm7tXyneMjQF5=
+u2Rm8mvFEcKgvc3FNTRi3Ctw/aRbA8NDMavzjRbemxEQI_iFC3iB9oozV/8" style=3D"text-=
+decoration: none;"><img alt=3D"x" border=3D"0" class=3D"twWhite" height=3D"=
+23" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/6=
+69d5713-9b6a-46bb-bd7e-c542cff6dd6a/a8e16746030542259a008c5feabcd187/Vector=
+%20%281%29.png" style=3D"width: 23px; height: 20px; max-width: 23px; border=
+: none; outline: none; text-decoration: none; font-size: 19px; font-family:=
+ Helvetica, Arial, sans-serif; color: rgb(0, 172, 237); font-weight: bold;"=
+ width=3D"23"></a></td> </tr> </tbody> </table> </td> </tr> <tr> <td align=
+=3D"left" height=3D"35" style=3D"font-size: 1px; line-height: 1px; border-b=
+ottom: 1px solid #A8A8A8;" valign=3D"top">&nbsp;</td> </tr> <tr> <td align=
+=3D"left" height=3D"28" style=3D"font-size: 1px; line-height: 1px;" valign=
+=3D"top">&nbsp;</td> </tr> <tr> <td align=3D"center" style=3D"font-family: =
+Helvetica, arial, sans-serif; font-size: 14px; line-height: 20px; color: #5=
+45454; padding-left: 45px; padding-right: 45px;" valign=3D"top"> <a class=
+=3D"footerlink" href=3D"https://apc01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2Fvb%2FUSsJC72BbEzKGHgLbtgNFXUJ9oX=
+VoLku9F6XUSRL14WEgf0dyTGS6g0dwhJ4bp1qwLwdehGd3_w2wzDGzzwYC1UrMUEbvxfMJzs1hi=
+2mufyJeYp5pWJ28o5Tnujft_4dLGQlCnhJfAMzoOpkBU89KFhrqL_P73PF4GNhig%2F569ESAB-=
+Hk4YTv2uBJdg2eG-vkD5u29I%2F8&amp;data=3D05%7C02%7C102767763%40students.swin=
+burne.edu.my%7Ceae6722461084550ede308dd92e1cf0b%7C3f639a9b27c8440382b1ebfb8=
+8052d15%7C0%7C0%7C638828220745530149%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcG=
+kiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D=
+%3D%7C0%7C%7C%7C&amp;sdata=3D5QBs0C3B5FITO3%2B3xf%2BFFJ5PVHEBsHNqFtnF2jh%2F=
+8OU%3D&amp;reserved=3D0" originalsrc=3D"https://click.grammarly.com/s/vb/US=
+sJC72BbEzKGHgLbtgNFXUJ9oXVoLku9F6XUSRL14WEgf0dyTGS6g0dwhJ4bp1qwLwdehGd3_w2w=
+zDGzzwYC1UrMUEbvxfMJzs1hi2mufyJeYp5pWJ28o5Tnujft_4dLGQlCnhJfAMzoOpkBU89KFhr=
+qL_P73PF4GNhig/569ESAB-Hk4YTv2uBJdg2eG-vkD5u29I/8" style=3D"text-decoration=
+: none; border-bottom: 1px solid #A8A8A8; color: #545454; white-space: nowr=
+ap;">View Web Version</a> =E2=80=A2 <a class=3D"footerlink" href=3D"https:/=
+/apc01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarl=
+y.com%2Fs%2Fc%2F0X0VsN2rLqJTlwykPZKdHH0fj5VOLKEE5EIv4Id143FM_3M6BnCEWFI0dja=
+2fGyM8Uy_q0_PCs1v92f5Jsq_UzPsdvhXXaX0unii5RT0TpENWyFRdqWUvwgM9eV07_sLGvBs2o=
+k33O554P_d_2vrtoSfZTKW4bfmSA71hLOEDGQk8x0jSSR-tag5-rNmujN8qFYyCk-hGogpaR4zM=
+NQLkQSSj7bveuzjf_PvLiRBoZ0yfrwfKyDz1IH1JmQ2P1CQAoMcwGSxRihtRT6gItmZoRkvl3e1=
+bXYjGPSboUGF-JUUlhkroN6W9LaOPM99oib2NK0i0Wk2tpm-DjrKTZEaQpQO1nTdtLVBoNAlNNN=
+j6x7X84itDZ6JPDuZwADKpla8D_Jsq6EhGU4TroSPUHMAdWmK_Bhm41TxMh2Pi6a9-Sz9kwrQjZ=
+GBzbxRH2RjsgxzMcQReiMkihxVfOxvoAimKqqzOSaIoK63ckVqAD3AI0kZiciZG4coWWyNuN2VF=
+RLbQNUt22zJ-pQJFHXSTv_i0-0Km07pl3AsRCUBGgqPYbfYnnos5d6W47RIqb3OTMEyLonTsu6_=
+ZFKJ4vnrI1Bi09BxOc56fFUDBRr1j8xDK5m_1pHCq-TCDZxh6RXBlqcdhHoCrR8eok_5BCMeM3v=
+KNXqlXFRKxXWz6cS92wQQ36uDxtmoP24E3OK8iyIJuQ9yZi5gbl1vVO4aV__oHEAdt2vIeKpyq7=
+zhFB5gP6K6cmCwfLz3HSzTwg0NqaPVgHZJfPcIj71Tvc6lSjhXLcvxafRxKGdyITf7nL3EHeQw%=
+2F7-1xOp4z4zhwvrLRLUkoYYCsws9JEcB3%2F8&amp;data=3D05%7C02%7C102767763%40stu=
+dents.swinburne.edu.my%7Ceae6722461084550ede308dd92e1cf0b%7C3f639a9b27c8440=
+382b1ebfb88052d15%7C0%7C0%7C638828220745542512%7CUnknown%7CTWFpbGZsb3d8eyJF=
+bXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIld=
+UIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DN1TbD7hLUm9GbddNppyo1uZVJNCNNGPsXkPs=
+Oew5EW8%3D&amp;reserved=3D0" originalsrc=3D"https://click.grammarly.com/s/c=
+/0X0VsN2rLqJTlwykPZKdHH0fj5VOLKEE5EIv4Id143FM_3M6BnCEWFI0dja2fGyM8Uy_q0_PCs=
+1v92f5Jsq_UzPsdvhXXaX0unii5RT0TpENWyFRdqWUvwgM9eV07_sLGvBs2ok33O554P_d_2vrt=
+oSfZTKW4bfmSA71hLOEDGQk8x0jSSR-tag5-rNmujN8qFYyCk-hGogpaR4zMNQLkQSSj7bveuzj=
+f_PvLiRBoZ0yfrwfKyDz1IH1JmQ2P1CQAoMcwGSxRihtRT6gItmZoRkvl3e1bXYjGPSboUGF-JU=
+UlhkroN6W9LaOPM99oib2NK0i0Wk2tpm-DjrKTZEaQpQO1nTdtLVBoNAlNNNj6x7X84itDZ6JPD=
+uZwADKpla8D_Jsq6EhGU4TroSPUHMAdWmK_Bhm41TxMh2Pi6a9-Sz9kwrQjZGBzbxRH2RjsgxzM=
+cQReiMkihxVfOxvoAimKqqzOSaIoK63ckVqAD3AI0kZiciZG4coWWyNuN2VFRLbQNUt22zJ-pQJ=
+FHXSTv_i0-0Km07pl3AsRCUBGgqPYbfYnnos5d6W47RIqb3OTMEyLonTsu6_ZFKJ4vnrI1Bi09B=
+xOc56fFUDBRr1j8xDK5m_1pHCq-TCDZxh6RXBlqcdhHoCrR8eok_5BCMeM3vKNXqlXFRKxXWz6c=
+S92wQQ36uDxtmoP24E3OK8iyIJuQ9yZi5gbl1vVO4aV__oHEAdt2vIeKpyq7zhFB5gP6K6cmCwf=
+Lz3HSzTwg0NqaPVgHZJfPcIj71Tvc6lSjhXLcvxafRxKGdyITf7nL3EHeQw/7-1xOp4z4zhwvrL=
+RLUkoYYCsws9JEcB3/8" style=3D"text-decoration: none; border-bottom: 1px sol=
+id #A8A8A8; color: #545454; white-space: nowrap;">Email Preferences</a> =E2=
+=80=A2 <a class=3D"footerlink" href=3D"https://apc01.safelinks.protection.o=
+utlook.com/?url=3Dhttps%3A%2F%2Fclick.grammarly.com%2Fs%2Feh%2FPFSZhdKsTg0A=
+5Xb1PseJ7bD_dG5f3ldW-zN-tdgKb1dRi0DIXxt4-ipCFFGxjNRM7NPYdLxVO8S5-tXyu48oO3H=
+WYEo7WrtIAta9lBGAi_yxPvFJMmA_VkZeHmZD-e60hZdYOhA1FH2vb13fX-iWeCmDIf203ARKc5=
+EAJkAaGvg06Dg27r2kg3PuUHEJNtkMjKVrQMjWeHgbHbGjXXTZUFdnust20W2M71j_szg84ktrw=
+ygvsoN4ts615QmOXmucCjQeW3mL8MBaw7sUAYvG9xh3QA_SeCsuoJbWP5T7OjpriiaPnNZz-7Yq=
+apYIZwKVWTjrte8mZvyDKeHGDENl2w9CQS7pmLQ02vrnvcIAkwiNG76yyx3IDnimi7v6tK6K6D-=
+N6lz1GJTvihpxpUyLW78g_blpzAIuSkzvmDbSqbeG5CGA1qP7QgRuCW2C4jnLJ6XJGyT5un772b=
+L-qsbhiTw41He8IHJY-JomtYPosEpNbkq4Ldf5AJfEt7zmyr1rNC_oxaGYg5h1RNr7ZVmf-ViUx=
+sfdAlpc6tfgPrj0Jxu55vQ1TtXDTkNDY_v4ucY5HtwXL8YZbE8tkPBUDDJVFUTk0ybrXemLI3R7=
+dU9tH3CFtuL-is3j2DBOrUNnRxWWXxglGr-Qho7J08adXCdcJgvn1fJZUaR80QdauY_J91kMXpg=
+vJ2mpj4_90iaSo-vo8qkCfBUHCmo0Y9UkSkJ5yyRzl7WMsmDUef878FJ4mT58E8Cmp2kYbb0VEe=
+HL3WmxHrErRonIG0BmHg%2FO_xAIi7D7tNUJso7OtPeGNOiGejlhbBt%2F8&amp;data=3D05%7=
+C02%7C102767763%40students.swinburne.edu.my%7Ceae6722461084550ede308dd92e1c=
+f0b%7C3f639a9b27c8440382b1ebfb88052d15%7C0%7C0%7C638828220745556849%7CUnkno=
+wn%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMi=
+IsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D1yMYR1VBP%2FJFd=
+yTfcOWKvlcJBXNIAxmNBluzcXi14a8%3D&amp;reserved=3D0" originalsrc=3D"https://=
+click.grammarly.com/s/eh/PFSZhdKsTg0A5Xb1PseJ7bD_dG5f3ldW-zN-tdgKb1dRi0DIXx=
+t4-ipCFFGxjNRM7NPYdLxVO8S5-tXyu48oO3HWYEo7WrtIAta9lBGAi_yxPvFJMmA_VkZeHmZD-=
+e60hZdYOhA1FH2vb13fX-iWeCmDIf203ARKc5EAJkAaGvg06Dg27r2kg3PuUHEJNtkMjKVrQMjW=
+eHgbHbGjXXTZUFdnust20W2M71j_szg84ktrwygvsoN4ts615QmOXmucCjQeW3mL8MBaw7sUAYv=
+G9xh3QA_SeCsuoJbWP5T7OjpriiaPnNZz-7YqapYIZwKVWTjrte8mZvyDKeHGDENl2w9CQS7pmL=
+Q02vrnvcIAkwiNG76yyx3IDnimi7v6tK6K6D-N6lz1GJTvihpxpUyLW78g_blpzAIuSkzvmDbSq=
+beG5CGA1qP7QgRuCW2C4jnLJ6XJGyT5un772bL-qsbhiTw41He8IHJY-JomtYPosEpNbkq4Ldf5=
+AJfEt7zmyr1rNC_oxaGYg5h1RNr7ZVmf-ViUxsfdAlpc6tfgPrj0Jxu55vQ1TtXDTkNDY_v4ucY=
+5HtwXL8YZbE8tkPBUDDJVFUTk0ybrXemLI3R7dU9tH3CFtuL-is3j2DBOrUNnRxWWXxglGr-Qho=
+7J08adXCdcJgvn1fJZUaR80QdauY_J91kMXpgvJ2mpj4_90iaSo-vo8qkCfBUHCmo0Y9UkSkJ5y=
+yRzl7WMsmDUef878FJ4mT58E8Cmp2kYbb0VEeHL3WmxHrErRonIG0BmHg/O_xAIi7D7tNUJso7O=
+tPeGNOiGejlhbBt/8" style=3D"text-decoration: none; border-bottom: 1px solid=
+ #A8A8A8; color: #545454; white-space: nowrap;">Unsubscribe</a> </td> </tr>=
+ <tr> <td align=3D"left" height=3D"20" style=3D"font-size: 1px; line-height=
+: 1px;" valign=3D"top">&nbsp;</td> </tr> <tr> <td align=3D"center" class=3D=
+"gblue" style=3D"font-family: Helvetica, arial, sans-serif; font-size: 13px=
+; line-height: 20px; color: #545454;" valign=3D"top">*This offer is applica=
+ble to the first seat only, is active until 11:59 PM PST on May 21, 2025, a=
+nd cannot be combined with other offers or discounts or applied to prior pu=
+rchases. After the promotional period ends, your account will renew at $144=
+.00 USD for the annual plan. Additional terms apply.<br> <br> You received =
+this offer for Grammarly Pro because you are currently opted in to receive =
+them via your preference settings. You may adjust your preferences at any t=
+ime by clicking the link above.<br> </td> </tr> <tr> <td align=3D"left" hei=
+ght=3D"20" style=3D"font-size: 1px; line-height: 1px;" valign=3D"top">&nbsp=
+;</td> </tr> <tr> <td align=3D"center" class=3D"gblue" style=3D"font-family=
+: Helvetica, arial, sans-serif; font-size: 13px; line-height: 20px; color: =
+#545454;" valign=3D"top">=C2=A9 2025 Grammarly, Inc., 548 Market St. #35410=
+, San Francisco, CA 94104</td> </tr> <tr> <td align=3D"left" height=3D"70" =
+style=3D"font-size: 1px; line-height: 1px;" valign=3D"top">&nbsp;</td> </tr=
+> </tbody> </table> </td> </tr> </tbody> </table> <!-- End Footer --> </td>=
+ </tr> </table> </td> </tr> </table> </td> </tr> </table> </body> </html>
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://tracksp.g=
+rammarly.com/q/tEiRRVHL-Lpmp_3p7jxhoQ~~/AARGbBA~/W3jBsMRaIKEniEmSWWbXpU3DRa=
+WxWgKXWkvA7i5mQLd3IxW1wAdCSpvdSvRbM5v5jUD9TXAIHXIuCFu_IKuNbMmgTOdet6688Vvco=
+eAh7fc~">
+
+--_----V4EkyoAbLN1YyeJPm3hY+A===_78/5E-19555-3BA84286--

@@ -1,0 +1,220 @@
+Delivered-To: nggavin888@gmail.com
+Received: by 2002:a05:7010:df8c:b0:44d:1b0a:5bc1 with SMTP id ok12csp416630mdb;
+        Fri, 18 Apr 2025 09:42:05 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEC8ajZ3O+uoKOvEWY5D4Y50xxIUfuW7TiYZNHACfApdEzTgRAAOVcEfeQ6ilugF3pQjoUz
+X-Received: by 2002:a05:620a:2684:b0:7c7:a56f:5ee with SMTP id af79cd13be357-7c927f7bafbmr433539585a.24.1744994525679;
+        Fri, 18 Apr 2025 09:42:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1744994525; cv=none;
+        d=google.com; s=arc-20240605;
+        b=OfUyoKnRVJVQUU9xlk/xwImJEouapNzxRRLMwCejGvAeTNT2BEPgUHRnfbaVoTnWPE
+         TsNL9rHTfZy11G79znbCO39e0ZULze2Hmkkn4l25MyOlCcEJTq4E27aIhhYz8Kl0bKSK
+         whlh5P23yYIG72zb9Dc0KtT8zvFrC3/0dh4EkleUOMCza8FN3y71bObW/K3h4wkghCxc
+         3Fxs5wFkV3lEgSHlevwU5FBNTOkSSV+rKrynEiVRwOzSzl66ThjaYMMx6YLbWVexOB4w
+         skli9mL6d3dnJG1KOEVN4BGaJq4jTIeorL2Jn3tm57+ATUic6aGwlWwq8qDNVgvLDxhB
+         js9w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:list-unsubscribe-post:list-unsubscribe
+         :date:subject:from:sender:to:message-id:dkim-signature
+         :dkim-signature;
+        bh=5w0AVwHYbCaXTaTyPYaf8WezdBM2nlLJmQyv076E64Q=;
+        fh=Gij65SMGYGE9VPx015grcShOsXJ6OFBi2FMSFN8J+7A=;
+        b=cHvve8DcorQ5pQsH82SA5OYr6hbsttIweO0gR9I15yo2S9p3u/I8ipqBr1eEslPF8w
+         AMFycKV2HqWpA6+cYCVPwF6y07+d1NZKwXrNnvM2B79H1lGvKXfcolJ5J2EVs7ZBEKUv
+         OTapPPWMtPzlRaN0K5gUsnYlPPkZ+o64Faz5hyMlyYCf+yMzrMXpfwYDamrdDlC/5asi
+         0gnJ+V3nZRhMC9fFgPRcVaE/H9MnEd+nyqFdo+cY8xB9EpFIvkwiwBaPzUJZyokiqv0M
+         sAfF7e7PLVElAP0t2YaW+V/pq8gHxjH63U99Zzf5y6bRAzIrvkLJK1Hquhb0eHKqA3Qq
+         mbWA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail.gymdone.com header.s=os1 header.b=COMNuWmK;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=MSJbH2Ar;
+       spf=pass (google.com: domain of bounce+cc6e00.df4425-nggavin888=gmail.com@mail.gymdone.com designates 159.112.250.126 as permitted sender) smtp.mailfrom="bounce+cc6e00.df4425-nggavin888=gmail.com@mail.gymdone.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gymdone.com
+Return-Path: <bounce+cc6e00.df4425-nggavin888=gmail.com@mail.gymdone.com>
+Received: from m250-126.rdns-1.mailgun.net (m250-126.rdns-1.mailgun.net. [159.112.250.126])
+        by mx.google.com with UTF8SMTPS id af79cd13be357-7c925bd2026si244664785a.557.2025.04.18.09.42.05
+        for <nggavin888@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 18 Apr 2025 09:42:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+cc6e00.df4425-nggavin888=gmail.com@mail.gymdone.com designates 159.112.250.126 as permitted sender) client-ip=159.112.250.126;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail.gymdone.com header.s=os1 header.b=COMNuWmK;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=MSJbH2Ar;
+       spf=pass (google.com: domain of bounce+cc6e00.df4425-nggavin888=gmail.com@mail.gymdone.com designates 159.112.250.126 as permitted sender) smtp.mailfrom="bounce+cc6e00.df4425-nggavin888=gmail.com@mail.gymdone.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gymdone.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.gymdone.com; q=dns/txt; s=os1; t=1744994525; x=1745001725;
+ h=Content-Transfer-Encoding: Content-Type: List-Unsubscribe-Post: List-Unsubscribe: Date: Subject: Subject: From: From: Sender: Sender: To: To: Message-Id: X-Feedback-Id;
+ bh=5w0AVwHYbCaXTaTyPYaf8WezdBM2nlLJmQyv076E64Q=;
+ b=COMNuWmKi6pVgK09kpVRP6hTv6ukbAY2pjanibvuZvrOJ+D69DRVt/TJ7FImNiBvSYdK+wLJXLAV9KsPYbc2Q9/ofLX9aFKsSLGlBZ8bKP82EvoSff0Yt8Tc6SBFWzho3uIWo146srVveXTThhtwXFiMhirPRCu5UE2MQwBKUFM=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1744994525; x=1745001725;
+ h=Content-Transfer-Encoding: Content-Type: List-Unsubscribe-Post: List-Unsubscribe: Date: Subject: Subject: From: From: Sender: Sender: To: To: Message-Id: X-Feedback-Id;
+ bh=5w0AVwHYbCaXTaTyPYaf8WezdBM2nlLJmQyv076E64Q=;
+ b=MSJbH2ArRQl6hqBiogpPI0Dm+Isl4n1HsAvMzAh04dayYWtNjCA9soAr8w8VGZWr6ZINbHtT2LFlSfpOBKTNUSUWIYXlOZUbzXg1f0ZMAJoVtilfPZfsEW7X/f9xGv20M1eaxG8qlVafspXkM6KvHvX5u+7L0JVMT+rrbL70SB4=
+X-Feedback-Id: partnership@gymdone.com::66900fcb6da03339dba788bf:mailgun
+X-Mailgun-Sending-Ip: 159.112.250.126
+X-Mailgun-Sending-Ip-Pool-Name: New Custom IP Pool (Self Serve)
+X-Mailgun-Sending-Ip-Pool: 63093c547805da6c00982da3
+X-Mailgun-Sid: WyI4NjhlMiIsIm5nZ2F2aW44ODhAZ21haWwuY29tIiwiZGY0NDI1Il0=
+Received: from onepush-web-5455f46b4-5kblt (255.13.34.34.bc.googleusercontent.com
+ [34.34.13.255]) by 0d71c3844168 with SMTP id 680249c48b370b960b7190be
+ (version=TLS1.3, cipher=TLS_AES_128_GCM_SHA256); Fri, 18 Apr 2025 12:47:00
+ GMT
+Message-Id: <20250418124700.61ce0cf69132a31c@mail.gymdone.com>
+To: nggavin888@gmail.com
+Sender: Gor <partnership@gymdone.com>
+From: Gor <partnership@gymdone.com>
+Subject: You have 100-Year Free Access to PRO
+Date: Fri, 18 Apr 2025 12:46:59 +0000
+X-Mailgun-Track-Opens: yes
+List-Unsubscribe: <https://unsubscribe.os-list.com/unsubscribe?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJpYXQiOjE3NDQ5Nzk3ODUsInVuc3Vic2NyaWJlX3Rva2VuIjoiYm1kbllYWnBiamc0T0VCbmJXRnBiQzVqYjIwN1lUWmpNdz09IiwiYXBwX2lkIjoiN2ZhM2ZmNjEtNzg5Yy00MjEzLWEzYjAtYTljY2UxYjI3M2NlIiwibm90aWZpY2F0aW9uX2lkIjoiZjQ0ODI3YjktOGEwNC00ZDk3LTg1ZWUtMTgzMjBkMTFlMWM0In0.JDqllSDRu-RaLB0YzWK48aAtYlBVsYjGbG6GfVYWUwJq8Ol_40WhKRmfvf9UxI_isGyeXYSJbB39Ep9lCxsVwA&aid=7fa3ff61-789c-4213-a3b0-a9cce1b273ce&nid=f44827b9-8a04-4d97-85ee-18320d11e1c4>
+X-Mailgun-Track: yes
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Mailgun-Track-Clicks: yes
+X-Mailgun-Variables: {"app_id":"7fa3ff61-789c-4213-a3b0-a9cce1b273ce","notification_id":"f44827b9-8a04-4d97-85ee-18320d11e1c4","player_id":"b225bf65-bbb2-4d37-9990-5a1f1648380d","send_time":"1744980419"}
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"u=
+rn:schemas-microsoft-com:office:office" lang=3D"en"><head><title></title><m=
+eta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><met=
+a name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1"><!--=
+[if mso]>
+<xml><w:WordDocument xmlns:w=3D"urn:schemas-microsoft-com:office:word"><w:D=
+ontUseAdvancedTypographyReadingMail/></w:WordDocument>
+<o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/=
+></o:OfficeDocumentSettings></xml>
+<![endif]--><style>
+*{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{c=
+olor:inherit!important;text-decoration:inherit!important}#MessageViewBody a=
+{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.de=
+sktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.im=
+age_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media =
+(max-width:620px){.mobile_hide{display:none}.row-content{width:100%!importa=
+nt}.stack .column{width:100%;display:block}.mobile_hide{min-height:0;max-he=
+ight:0;max-width:0;overflow:hidden;font-size:0}.desktop_hide,.desktop_hide =
+table{display:table!important;max-height:none!important}.row-1 .column-1{pa=
+dding:0!important}}
+</style><!--[if mso ]><style>sup, sub { font-size: 100% !important; } sup {=
+ mso-text-raise:10% } sub { mso-text-raise:-10% }</style> <![endif]--></hea=
+d><body class=3D"body" style=3D"background-color:#f3f3f3;margin:0;padding:0=
+;-webkit-text-size-adjust:none;text-size-adjust:none"><span style=3D"color:=
+ transparent; display: none; height: 0; max-height: 0; max-width: 0; opacit=
+y: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">You h=
+ave 100-Year Free Access to PRO=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=
+=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=
+=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=
+=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C=
+&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=
+=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nb=
+sp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=
+=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=
+=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=
+=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=
+=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C=
+&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=
+=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nb=
+sp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=
+=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=
+=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=
+=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=
+=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C=
+&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=
+=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nb=
+sp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=
+=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=
+=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=
+=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=
+=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C=
+&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=
+=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nb=
+sp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=
+=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=
+=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=
+=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=
+=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C=
+&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=
+=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nb=
+sp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=
+=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=
+=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;=CD=8F=E2=80=8C&nbsp;</span><tabl=
+e class=3D"nl-container" width=3D"100%" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0;mso-table-r=
+space:0;background-color:#f3f3f3"><tbody><tr><td><table class=3D"row row-1"=
+ align=3D"center" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0;mso-table-rspace:0=
+;background-color:#f3f3f3"><tbody><tr><td><table class=3D"row-content stack=
+" align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D=
+"presentation" style=3D"mso-table-lspace:0;mso-table-rspace:0;color:#000;wi=
+dth:600px;margin:0 auto" width=3D"600"><tbody><tr><td class=3D"column colum=
+n-1" width=3D"100%" style=3D"mso-table-lspace:0;mso-table-rspace:0;font-wei=
+ght:400;text-align:left;padding-bottom:5px;padding-top:5px;vertical-align:t=
+op"><table class=3D"image_block block-1" width=3D"100%" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"mso-table-lspa=
+ce:0;mso-table-rspace:0"><tbody><tr><td class=3D"pad" style=3D"width:100%">=
+<div class=3D"alignment" align=3D"center"><div style=3D"max-width:600px"><i=
+mg src=3D"https://beefree-storage.onesignal.com/images/7fa3ff61-789c-4213-a=
+3b0-a9cce1b273ce/Rectangle%202.png" style=3D"display:block;height:auto;bord=
+er:0;width:100%" width=3D"600" alt=3D"" title=3D"" height=3D"auto"></div></=
+div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table><table class=3D"row row-2" align=3D"center" width=3D"100%" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"mso-=
+table-lspace:0;mso-table-rspace:0;background-color:#f3f3f3"><tbody><tr><td>=
+<table class=3D"row-content stack" align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0=
+;mso-table-rspace:0;color:#000;width:600px;margin:0 auto" width=3D"600"><tb=
+ody><tr><td class=3D"column column-1" width=3D"100%" style=3D"mso-table-lsp=
+ace:0;mso-table-rspace:0;font-weight:400;text-align:left;background-color:#=
+fff;padding-bottom:5px;padding-left:5px;padding-right:5px;padding-top:5px;v=
+ertical-align:top"><table class=3D"text_block block-1" width=3D"100%" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"=
+mso-table-lspace:0;mso-table-rspace:0;word-break:break-word"><tbody><tr><td=
+ class=3D"pad" style=3D"padding-bottom:5px;padding-left:20px;padding-right:=
+20px;padding-top:20px"><div style=3D"font-family:sans-serif"><div class=3D"=
+" style=3D"font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans=
+-serif;mso-line-height-alt:14.399999999999999px;color:#000;line-height:1.2"=
+><p style=3D"margin:0;font-size:14px;mso-line-height-alt:16.8px">
+<span style=3D"word-break: break-word; font-size: 16px;">Hi Gavin</span></p=
+></div></div></td></tr></tbody></table><table class=3D"text_block block-2" =
+width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0;mso-table-rspace:0;word-break:break-=
+word"><tbody><tr><td class=3D"pad" style=3D"padding-bottom:10px;padding-lef=
+t:20px;padding-right:20px;padding-top:15px"><div style=3D"font-family:sans-=
+serif"><div class=3D"" style=3D"font-size:12px;font-family:'Helvetica Neue'=
+,Helvetica,Arial,sans-serif;mso-line-height-alt:14.399999999999999px;color:=
+#000;line-height:1.2"><p style=3D"margin:0;font-size:16px;mso-line-height-a=
+lt:19.2px">We accidentally reset all our App Store ratings =F0=9F=98=A2&nbs=
+p;</p><p style=3D"margin:0;font-size:16px;mso-line-height-alt:14.3999999999=
+99999px">&nbsp;</p><p style=3D"margin:0;font-size:16px;mso-line-height-alt:=
+19.2px">
+Since you received <strong>LIFETIME access for free</strong>, we=E2=80=99d =
+be super <strong>grateful</strong> if you could support us with a quick 5-=
+=E2=AD=90=EF=B8=8F=E2=AD=90=EF=B8=8F=E2=AD=90=EF=B8=8F=E2=AD=90=EF=B8=8F=E2=
+=AD=90=EF=B8=8F review.<br><br>With hope, we ask for your support =F0=9F=99=
+=8F</p><p style=3D"margin:0;font-size:16px;mso-line-height-alt:14.399999999=
+999999px">&nbsp;</p><p style=3D"margin:0;font-size:16px;mso-line-height-alt=
+:19.2px">It takes <strong>10 seconds</strong> and helps us a lot!</p><p sty=
+le=3D"margin:0;font-size:16px;mso-line-height-alt:14.399999999999999px">&nb=
+sp;
+</p><p style=3D"margin:0;font-size:16px;mso-line-height-alt:19.2px"><a href=
+=3D"https://email.mail.gymdone.com/c/eJws0DuO3DAQBNDTiFkP2M3mL1DgRNdYNH9awv=
+oQI-0ac3tj1k6rKnklY3z0MvsmpjWH4EPMwIQGxCQNEnOumMibXFWZS2Mmq-qMnjlGtmTV58y2O=
+k9GF3HNcxARZ6kkk3wtTaxTfSZNVjMGJPZaPxzmqnNzEQ2JwTyx3qVvj_W1l_Ooj3zuaps_73tc=
+k_k10TLRImNcDxlj-6knWr6uf-lEy_ra4c_5_H1-3TA2OY76hCRXz9D6PdHSCxqrrWFmo47z7q1=
+nuft5vO2NOZBPEYJoBi7RQ7C1AgZDuiBWzKzGJq_6fM8TkU3NWUgpEXAxHmKMGqxgQ8fBBF3Ucz=
+7WVb77EUKYWK8_urfqqkf5uPv-_8KgGaP6nulvAAAA__-d9nOt" target=3D"_blank" style=
+=3D"text-decoration: underline; color: #523177;" rel=3D"noopener">https://a=
+pps.apple.com/us/app/gym-workout-planner-basic-fit/id1350534443</a></p><p s=
+tyle=3D"margin:0;font-size:16px;mso-line-height-alt:14.399999999999999px">&=
+nbsp;</p><p style=3D"margin:0;font-size:16px;mso-line-height-alt:19.2px">
+<span style=3D"word-break: break-word; font-size: 16px;">Best,</span><br><s=
+pan style=3D"word-break: break-word; font-size: 16px;">Gor</span><br><span =
+style=3D"word-break: break-word; font-size: 16px;">The GYMDONE Team</span><=
+/p></div></div></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r></tbody></table></td></tr></tbody></table><!-- End --><img width=3D"1" he=
+ight=3D"1" alt=3D"" src=3D"https://email.mail.gymdone.com/o/eJwsz9GqKyEMheG=
+nqXeWJEaNFz5LiRrnCJ2Z0lMKfftNN_t-wfp-fTxua9Q8NcyZ0Gcp3TNh8BoaeC29GzbKoZsbdU=
+xmis4qZuZSOFJ0_6rGEEdjMRkxTSE1nq3knJLNlpXcqgQUgVGQOANcE3aDPlPBQBqwXxh2Xffr9=
+tnHedi1n7s7zteaq-trnceXOJmFciteFNjzKNlLNPMogWAgGnZ2j7t-7PmdN6LYZoq-tUaeR8i-=
+lAI-Kk5MLEFguGc9tk3f6xCRC8P2i_ie_7dj3F5r_ysVYCzuXeknAAD__9N8VtM"></body></h=
+tml>
+
